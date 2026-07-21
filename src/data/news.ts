@@ -1,0 +1,58 @@
+import { NewsArticle } from "@/types";
+
+export const newsArticles: NewsArticle[] = [
+  {
+    id: "article-1",
+    slug: "record-production-q3-2024",
+    titleKey: "article1.title",
+    excerptKey: "article1.excerpt",
+    date: "2024-11-15",
+    category: "production",
+    imageGradient: "from-amber-900 to-yellow-800",
+  },
+  {
+    id: "article-2",
+    slug: "sustainability-report-2024",
+    titleKey: "article2.title",
+    excerptKey: "article2.excerpt",
+    date: "2024-10-01",
+    category: "sustainability",
+    imageGradient: "from-green-900 to-emerald-800",
+  },
+  {
+    id: "article-3",
+    slug: "new-exploration-license-western-region",
+    titleKey: "article3.title",
+    excerptKey: "article3.excerpt",
+    date: "2024-08-22",
+    category: "exploration",
+    imageGradient: "from-yellow-900 to-amber-700",
+  },
+  {
+    id: "article-4",
+    slug: "community-development-program-launch",
+    titleKey: "article4.title",
+    excerptKey: "article4.excerpt",
+    date: "2024-06-10",
+    category: "community",
+    imageGradient: "from-orange-900 to-amber-600",
+  },
+  {
+    id: "article-5",
+    slug: "gold-price-outlook-2025",
+    titleKey: "article5.title",
+    excerptKey: "article5.excerpt",
+    date: "2025-01-05",
+    category: "market",
+    imageGradient: "from-amber-800 to-yellow-600",
+  },
+  {
+    id: "article-6",
+    slug: "processing-plant-expansion",
+    titleKey: "article6.title",
+    excerptKey: "article6.excerpt",
+    date: "2024-04-18",
+    category: "operations",
+    imageGradient: "from-yellow-800 to-amber-900",
+  },
+];

@@ -1,0 +1,36 @@
+{
+  "name": "goldmine-corporate",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "next": "^15.1.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "next-intl": "^4.1.0",
+    "framer-motion": "^12.0.0",
+    "lucide-react": "^0.469.0",
+    "leaflet": "^1.9.4",
+    "react-leaflet": "^5.0.0",
+    "clsx": "^2.1.1"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.0",
+    "@types/node": "^22.10.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "@types/leaflet": "^1.9.8",
+    "tailwindcss": "^4.0.0",
+    "@tailwindcss/postcss": "^4.0.0",
+    "postcss": "^8.5.0",
+    "autoprefixer": "^10.4.0",
+    "eslint": "^9.17.0",
+    "eslint-config-next": "^15.1.0",
+    "@eslint/eslintrc": "^3.2.0"
+  }
+}

@@ -1,0 +1,101 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #C8A24A;
+  --color-primary-light: #D4B76A;
+  --color-primary-dark: #A8872E;
+  --color-dark: #0A0A0A;
+  --color-slate-custom: #111827;
+  --color-neutral-custom: #F5F5F5;
+  --color-gold-50: #FDF8E8;
+  --color-gold-100: #F9EEC5;
+  --color-gold-200: #F3DD8B;
+  --color-gold-300: #EBC84F;
+  --color-gold-400: #C8A24A;
+  --color-gold-500: #A8872E;
+  --color-gold-600: #8A6D24;
+  --color-gold-700: #6B541C;
+  --color-gold-800: #4D3C14;
+  --color-gold-900: #2E240C;
+  --font-heading: "Georgia", "Times New Roman", serif;
+  --font-body: "Inter", "Segoe UI", system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: var(--font-body);
+    color: #111827;
+    background-color: #ffffff;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .gold-gradient {
+    background: linear-gradient(135deg, #C8A24A 0%, #E8D48B 50%, #C8A24A 100%);
+  }
+
+  .dark-gradient {
+    background: linear-gradient(180deg, #0A0A0A 0%, #111827 100%);
+  }
+
+  .hero-overlay {
+    background: linear-gradient(
+      180deg,
+      rgba(10, 10, 10, 0.7) 0%,
+      rgba(10, 10, 10, 0.4) 40%,
+      rgba(10, 10, 10, 0.8) 100%
+    );
+  }
+
+  .gold-text {
+    background: linear-gradient(135deg, #C8A24A, #E8D48B, #C8A24A);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .card-hover {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .card-hover:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  }
+
+  .line-gold {
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(90deg, #C8A24A, #E8D48B);
+  }
+
+  .section-padding {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  @media (min-width: 768px) {
+    .section-padding {
+      padding-top: 7rem;
+      padding-bottom: 7rem;
+    }
+  }
+
+  .mine-pattern {
+    background-image: 
+      radial-gradient(circle at 20% 80%, rgba(200, 162, 74, 0.03) 0%, transparent 50%),
+      radial-gradient(circle at 80% 20%, rgba(200, 162, 74, 0.03) 0%, transparent 50%);
+  }
+}
