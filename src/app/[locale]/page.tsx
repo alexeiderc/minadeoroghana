@@ -171,7 +171,7 @@ export default function HomePage() {
               {tMetrics("subtitle")}
             </p>
           </div>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
             {metrics.map((metric, i) => (
               <MetricCard
                 key={i}
@@ -191,8 +191,22 @@ export default function HomePage() {
             title={tSustainability("title")}
             subtitle={tSustainability("subtitle")}
           />
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-            {sustainabilityItems.map((item) => {
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {sustainabilityItems.slice(0, 3).map((item) => {
+              const Icon = sustainabilityIconMap[item.icon] ?? TreePine;
+              return (
+                <SustainabilityCard
+                  key={item.id}
+                  icon={Icon}
+                  title={tSustainability(item.titleKey)}
+                  description={tSustainability(item.descriptionKey)}
+                  metric={item.metric}
+                />
+              );
+            })}
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-6 max-w-4xl mx-auto">
+            {sustainabilityItems.slice(3, 5).map((item) => {
               const Icon = sustainabilityIconMap[item.icon] ?? TreePine;
               return (
                 <SustainabilityCard

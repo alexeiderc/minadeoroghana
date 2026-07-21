@@ -17,8 +17,8 @@
     "contact": "Contact"
   },
   "hero": {
-    "title": "Pioneering Gold & Diamond Mining Excellence",
-    "subtitle": "MC QUEST GOLD & DIAMOND MINING INDUSTRY LTD delivers world-class mining operations in Ghana's Eastern Region through LiDAR 3D drone technology and non-mercury, cyanide-free recovery.",
+    "title": "MC QUEST GOLD & DIAMOND MINING INDUSTRY LTD",
+    "subtitle": "Pioneering Gold & Diamond Mining Excellence — World-class operations in Ghana's Eastern Region through LiDAR 3D drone technology and non-mercury, cyanide-free recovery.",
     "cta1": "Explore Operations",
     "cta2": "Contact Us"
   },
@@ -65,6 +65,8 @@
     "team": "Our Team",
     "teamDesc": "Our operations are managed by experienced mining professionals with deep expertise in Ghanaian gold mining operations.",
     "teamPlaceholder": "Leadership team profiles coming soon.",
+    "mapTitle": "Mine Location",
+    "mapSubtitle": "Our mining operations are located in Ghana's Eastern Region, approximately 100 km from Accra.",
     "ctaTitle": "Partner With Us",
     "ctaDesc": "MC QUEST GOLD & DIAMOND MINING INDUSTRY LTD is committed to becoming a leader in technology-driven, environmentally responsible mining in Africa.",
     "ctaButton": "Get in Touch"

@@ -17,8 +17,8 @@
     "contact": "聯繫我們"
   },
   "hero": {
-    "title": "開創黃金與鑽石開採卓越典範",
-    "subtitle": "MC QUEST GOLD & DIAMOND MINING INDUSTRY LTD 通過 LiDAR 3D 無人機技術和無汞、無氰化物回收法，在迦納東部地區提供世界級的礦業營運。",
+    "title": "MC QUEST GOLD & DIAMOND MINING INDUSTRY LTD",
+    "subtitle": "開創黃金與鑽石開採卓越典範 — 在迦納東部地區提供世界級的礦業營運，通過 LiDAR 3D 無人機技術和無汞、無氰化物回收法。",
     "cta1": "探索營運",
     "cta2": "聯繫我們"
   },
@@ -65,6 +65,8 @@
     "team": "我們的團隊",
     "teamDesc": "我們的營運由經驗豐富的礦業專業人士管理，他們在迦納黃金開採作業方面擁有深厚的專業知識。",
     "teamPlaceholder": "領導團隊簡介即將推出。",
+    "mapTitle": "礦區位置",
+    "mapSubtitle": "我們的採礦作業位於迦納東部地區，距阿克拉約100公里。",
     "ctaTitle": "與我們合作",
     "ctaDesc": "MC QUEST GOLD & DIAMOND MINING INDUSTRY LTD 致力於成為非洲技術驅動型環保礦業的領導者。",
     "ctaButton": "聯繫我們"

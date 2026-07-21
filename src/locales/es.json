@@ -17,8 +17,8 @@
     "contact": "Contacto"
   },
   "hero": {
-    "title": "Pioneros en la Excelencia Minera de Oro y Diamantes",
-    "subtitle": "MC QUEST GOLD & DIAMOND MINING INDUSTRY LTD lleva operaciones mineras de clase mundial a la Región Oriental de Ghana mediante tecnología de drones LiDAR 3D y recuperación sin mercurio ni cianuro.",
+    "title": "MC QUEST GOLD & DIAMOND MINING INDUSTRY LTD",
+    "subtitle": "Pioneros en la Excelencia Minera de Oro y Diamantes — Operaciones de clase mundial en la Región Oriental de Ghana mediante tecnología de drones LiDAR 3D y recuperación sin mercurio ni cianuro.",
     "cta1": "Explorar Operaciones",
     "cta2": "Contáctenos"
   },
@@ -65,6 +65,8 @@
     "team": "Nuestro Equipo",
     "teamDesc": "Nuestras operaciones son gestionadas por profesionales mineros experimentados con profunda experiencia en operaciones mineras de oro en Ghana.",
     "teamPlaceholder": "Perfiles del equipo directivo próximamente.",
+    "mapTitle": "Ubicación de la Mina",
+    "mapSubtitle": "Nuestras operaciones mineras están ubicadas en la Región Oriental de Ghana, aproximadamente a 100 km de Accra.",
     "ctaTitle": "Asóciese con Nosotros",
     "ctaDesc": "MC QUEST GOLD & DIAMOND MINING INDUSTRY LTD está comprometida a convertirse en líder en minería impulsada por tecnología y ambientalmente responsable en África.",
     "ctaButton": "Contáctenos"

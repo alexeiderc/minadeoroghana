@@ -3,12 +3,13 @@
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import { motion } from "framer-motion";
-import { Eye, Target, Heart, ArrowRight, Users } from "lucide-react";
+import { Eye, Target, Heart, ArrowRight, Users, MapPin } from "lucide-react";
 import { timelineEvents, companyStats } from "@/data/about";
 import Timeline from "@/components/timeline";
 import AnimatedCounter from "@/components/animated-counter";
 import ScrollReveal from "@/components/scroll-reveal";
 import SectionHeader from "@/components/section-header";
+import MapSection from "@/components/map-section";
 
 export default function AboutPage() {
   const t = useTranslations("about");
@@ -72,19 +73,24 @@ export default function AboutPage() {
       {/* Vision / Mission / Values */}
       <section className="section-padding bg-neutral-custom mine-pattern">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-3 gap-6">
             {visionMissionValues.map((item, i) => (
               <ScrollReveal key={i} delay={i * 0.15}>
-                <div className="bg-white rounded-2xl p-8 border border-gold-100/50 text-center h-full hover:shadow-lg transition-shadow">
-                  <div className="w-16 h-16 rounded-xl gold-gradient flex items-center justify-center mx-auto mb-6">
-                    <item.icon className="w-7 h-7 text-dark" />
+                <div className="group relative bg-white rounded-2xl border border-gold-100/50 hover:border-primary/40 transition-all duration-500 hover:shadow-xl hover:shadow-primary/5 text-center overflow-hidden">
+                  <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                    <div className="absolute top-0 left-1/2 -translate-x-1/2 w-48 h-48 bg-primary/5 rounded-full blur-3xl" />
                   </div>
-                  <h3 className="text-xl font-bold text-slate-custom font-[family-name:var(--font-heading)] mb-4">
-                    {item.title}
-                  </h3>
-                  <p className="text-slate-custom/60 leading-relaxed text-sm">
-                    {item.description}
-                  </p>
+                  <div className="relative p-6">
+                    <div className="w-14 h-14 rounded-2xl gold-gradient flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-primary/20">
+                      <item.icon className="w-6 h-6 text-dark" />
+                    </div>
+                    <h3 className="text-lg font-bold text-slate-custom font-[family-name:var(--font-heading)] mb-2">
+                      {item.title}
+                    </h3>
+                    <p className="text-slate-custom/60 leading-relaxed text-sm">
+                      {item.description}
+                    </p>
+                  </div>
                 </div>
               </ScrollReveal>
             ))}
@@ -95,10 +101,10 @@ export default function AboutPage() {
       {/* Company Stats */}
       <section className="section-padding bg-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-2 md:grid-cols-5 gap-6">
+          <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
             {stats.map((stat, i) => (
               <ScrollReveal key={i} delay={i * 0.1}>
-                <div className="text-center p-8 rounded-2xl bg-neutral-custom border border-gold-100/50 group hover:border-primary/30 transition-colors">
+                <div className="flex flex-col items-center justify-center text-center p-6 rounded-2xl bg-neutral-custom border border-gold-100/50 group hover:border-primary/30 transition-colors min-h-[160px]">
                   <div className="text-4xl sm:text-5xl font-bold gold-text font-[family-name:var(--font-heading)] mb-3">
                     <AnimatedCounter end={stat.value} suffix={stat.suffix} />
                   </div>
@@ -145,6 +151,29 @@ export default function AboutPage() {
               </div>
             </ScrollReveal>
           </div>
+        </div>
+      </section>
+
+      {/* Mine Location Map */}
+      <section className="section-padding bg-white">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <SectionHeader title={t("mapTitle")} subtitle={t("mapSubtitle")} />
+          <ScrollReveal>
+            <MapSection
+              center={[6.1, -0.8]}
+              zoom={8}
+              markers={[
+                {
+                  id: "mine",
+                  name: "MC QUEST Eastern Region",
+                  type: "mine",
+                  lat: 6.05,
+                  lng: -0.85,
+                  description: t("historyDesc"),
+                },
+              ]}
+            />
+          </ScrollReveal>
         </div>
       </section>
 

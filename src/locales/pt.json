@@ -17,10 +17,10 @@
     "contact": "Contato"
   },
   "hero": {
-    "title": "Pioneiros na Excelência de Mineração de Ouro e Diamantes",
-    "subtitle": "MC QUEST GOLD & DIAMOND MINING INDUSTRY LTD realiza operações de mineração de classe mundial na Região Oriental de Gana através da tecnologia de drones LiDAR 3D e recuperação sem mercúrio e cianeto.",
+    "title": "MC QUEST GOLD & DIAMOND MINING INDUSTRY LTD",
+    "subtitle": "Pioneiros na Excelência de Mineração de Ouro e Diamantes — Operações de classe mundial na Região Oriental de Gana através da tecnologia de drones LiDAR 3D e recuperação sem mercúrio e cianeto.",
     "cta1": "Explorar Operações",
-    "cta2": "Fale Connosco"
+    "cta2": "Contacte-nos"
   },
   "about": {
     "title": "MC QUEST GOLD & DIAMOND MINING INDUSTRY LTD",
@@ -65,9 +65,11 @@
     "team": "Nossa Equipe",
     "teamDesc": "Nossas operações são gerenciadas por profissionais de mineração experientes com profunda experiência em operações de mineração de ouro em Gana.",
     "teamPlaceholder": "Perfis da equipe de liderança em breve.",
+    "mapTitle": "Localização da Mina",
+    "mapSubtitle": "Nossas operações de mineração estão localizadas na Região Oriental de Gana, aproximadamente a 100 km de Acra.",
     "ctaTitle": "Associ-se Connosco",
     "ctaDesc": "MC QUEST GOLD & DIAMOND MINING INDUSTRY LTD está comprometida em tornar-se líder em mineração impulsionada por tecnologia e ambientalmente responsável na África.",
-    "ctaButton": "Fale Connosco"
+    "ctaButton": "Contacte-nos"
   },
   "operations": {
     "title": "Operações de Mineração",
@@ -112,7 +114,7 @@
     "safetyItem4": "Diques de rejeitos projetados segundo padrões ambientais internacionais",
     "ctaTitle": "Conheça Nossas Operações",
     "ctaDesc": "Agende uma visita ou solicite informações técnicas detalhadas sobre nossas operações de mineração.",
-    "ctaButton": "Fale Connosco"
+    "ctaButton": "Contacte-nos"
   },
   "metrics": {
     "title": "Números-Chave",
@@ -247,9 +249,9 @@
       "subject": "Assunto",
       "message": "Mensagem",
       "submit": "Enviar Mensagem",
-      "sending": "Enviando...",
+      "sending": "A enviar...",
       "success": "Mensagem enviada com sucesso!",
-      "error": "Algo deu errado. Por favor, tente novamente."
+      "error": "Algo correu mal. Por favor, tente novamente."
     },
     "info": {
       "headquarters": "Escritório de Operações",
@@ -257,7 +259,7 @@
       "phone": "+233 (0) 257-055-1514",
       "email": "info@mcquestgoldmining.com",
       "whatsapp": "+233 (0) 570-551-514",
-      "hours": "Seg — Sex: 8:00 AM — 5:00 PM (GMT)",
+      "hours": "Seg — Sex: 8:00 — 17:00 (GMT)",
       "registration": "Registro da Empresa",
       "registrationValue": "Ref No: CS007250125 | TIN: C0065010639 | Sector: GOLD & DIAMOND Miner"
     }
@@ -293,8 +295,8 @@
     "connect": "Conecte-se Connosco",
     "newsletter": "Boletim Informativo",
     "newsletterDesc": "Mantenha-se atualizado com nossas últimas notícias e relatórios.",
-    "emailPlaceholder": "Digite seu e-mail",
-    "subscribe": "Inscrever-se",
+    "emailPlaceholder": "Introduza o seu e-mail",
+    "subscribe": "Subscrever",
     "privacy": "Política de Privacidade",
     "terms": "Termos de Serviço",
     "copyright": "MC QUEST GOLD & DIAMOND MINING INDUSTRY LTD. Todos os direitos reservados.",
