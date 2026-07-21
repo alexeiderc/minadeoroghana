@@ -4,7 +4,7 @@ import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import { motion } from "framer-motion";
 import { Eye, Target, Heart, ArrowRight, Users } from "lucide-react";
-import { timelineEvents } from "@/data/about";
+import { timelineEvents, companyStats } from "@/data/about";
 import Timeline from "@/components/timeline";
 import AnimatedCounter from "@/components/animated-counter";
 import ScrollReveal from "@/components/scroll-reveal";
@@ -15,16 +15,15 @@ export default function AboutPage() {
 
   const translatedEvents = timelineEvents.map((event) => ({
     year: event.year,
-    title: t(event.titleKey.replace(/^about\./, "")),
-    description: t(event.descriptionKey.replace(/^about\./, "")),
+    title: t(`timeline.${event.titleKey}`),
+    description: t(`timeline.${event.descriptionKey}`),
   }));
 
-  const stats = [
-    { value: 21, suffix: "+", label: t("stats.years") },
-    { value: 2400, suffix: "+", label: t("stats.employees") },
-    { value: 3, suffix: "", label: t("stats.countries") },
-    { value: 15, suffix: "+", label: t("stats.awards") },
-  ];
+  const stats = companyStats.map((stat) => ({
+    value: stat.value,
+    suffix: stat.suffix,
+    label: t(`stats.${stat.labelKey}`),
+  }));
 
   const visionMissionValues = [
     { icon: Eye, title: t("vision"), description: t("visionDesc") },
@@ -96,7 +95,7 @@ export default function AboutPage() {
       {/* Company Stats */}
       <section className="section-padding bg-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+          <div className="grid grid-cols-2 md:grid-cols-5 gap-6">
             {stats.map((stat, i) => (
               <ScrollReveal key={i} delay={i * 0.1}>
                 <div className="text-center p-8 rounded-2xl bg-neutral-custom border border-gold-100/50 group hover:border-primary/30 transition-colors">
@@ -114,8 +113,43 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Team / Leadership Placeholder */}
+      {/* Geology & Resources */}
       <section className="section-padding bg-neutral-custom mine-pattern">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <SectionHeader title={t("geology")} subtitle={t("geologyDesc")} />
+          <div className="grid md:grid-cols-2 gap-8 mt-12">
+            <ScrollReveal>
+              <div className="bg-white rounded-2xl p-8 border border-gold-100/50 h-full">
+                <h3 className="text-xl font-bold text-slate-custom font-[family-name:var(--font-heading)] mb-4">
+                  {t("resources")}
+                </h3>
+                <p className="text-slate-custom/60 leading-relaxed text-sm">
+                  {t("resourcesDesc")}
+                </p>
+              </div>
+            </ScrollReveal>
+            <ScrollReveal delay={0.1}>
+              <div className="bg-white rounded-2xl p-8 border border-gold-100/50 h-full">
+                <h3 className="text-xl font-bold text-slate-custom font-[family-name:var(--font-heading)] mb-4">
+                  {t("cutOff")}
+                </h3>
+                <p className="text-slate-custom/60 leading-relaxed text-sm mb-6">
+                  {t("cutOffDesc")}
+                </p>
+                <h3 className="text-xl font-bold text-slate-custom font-[family-name:var(--font-heading)] mb-4">
+                  {t("recoveryRate")}
+                </h3>
+                <p className="text-slate-custom/60 leading-relaxed text-sm">
+                  {t("recoveryRateDesc")}
+                </p>
+              </div>
+            </ScrollReveal>
+          </div>
+        </div>
+      </section>
+
+      {/* Team / Leadership Placeholder */}
+      <section className="section-padding bg-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <SectionHeader title={t("team")} subtitle={t("teamDesc")} />
           <ScrollReveal>
@@ -141,7 +175,7 @@ export default function AboutPage() {
             <h2 className="text-3xl sm:text-4xl font-bold font-[family-name:var(--font-heading)] mb-6">
               <span className="gold-text">{t("ctaTitle")}</span>
             </h2>
-            <p className="text-white/60 text-lg mb-8 max-w-2xl mx-auto leading-relaxed">
+            <p className="text-white/60 text-lg max-w-2xl mx-auto mb-8 leading-relaxed">
               {t("ctaDesc")}
             </p>
             <Link

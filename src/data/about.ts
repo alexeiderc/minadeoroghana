@@ -37,6 +37,6 @@ export const companyStats = [
   { value: 1000, suffix: "+", labelKey: "concessions" },
   { value: 405, suffix: " ha", labelKey: "hectares" },
   { value: 10, suffix: " g/t", labelKey: "grade" },
-  { value: 3, suffix: " years", labelKey: "license" },
+  { value: 90, suffix: "%", labelKey: "recovery" },
   { value: 100, suffix: " km", labelKey: "distance" },
 ];

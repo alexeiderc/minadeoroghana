@@ -50,10 +50,10 @@ export default function Footer() {
           <div className="lg:col-span-1">
             <Link href="/" className="flex items-center gap-2 mb-6">
               <div className="w-9 h-9 rounded-lg gold-gradient flex items-center justify-center">
-                <span className="text-dark font-bold text-sm font-[family-name:var(--font-heading)]">G</span>
+                <span className="text-dark font-bold text-sm font-[family-name:var(--font-heading)]">MC</span>
               </div>
-              <span className="text-xl font-bold gold-text font-[family-name:var(--font-heading)] tracking-wide">
-                GOLDMINE
+              <span className="text-lg font-bold gold-text font-[family-name:var(--font-heading)] tracking-wide">
+                MC QUEST
               </span>
             </Link>
             <p className="text-white/50 text-sm leading-relaxed mb-6">

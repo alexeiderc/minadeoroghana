@@ -44,7 +44,7 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
       >
         <div className="flex items-center justify-between p-6 border-b border-white/10">
           <span className="text-xl font-bold gold-text font-[family-name:var(--font-heading)]">
-            GOLDMINE
+            MC QUEST
           </span>
           <button
             onClick={onClose}

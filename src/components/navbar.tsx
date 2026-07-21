@@ -58,10 +58,10 @@ export default function Navbar() {
           <div className="flex items-center justify-between h-full">
             <Link href="/" className="flex items-center gap-2 shrink-0">
               <div className="w-9 h-9 rounded-lg gold-gradient flex items-center justify-center">
-                <span className="text-dark font-bold text-sm font-[family-name:var(--font-heading)]">G</span>
+                <span className="text-dark font-bold text-sm font-[family-name:var(--font-heading)]">MC</span>
               </div>
-              <span className="text-xl font-bold gold-text font-[family-name:var(--font-heading)] tracking-wide">
-                GOLDMINE
+              <span className="text-lg font-bold gold-text font-[family-name:var(--font-heading)] tracking-wide hidden sm:inline">
+                MC QUEST
               </span>
             </Link>
 

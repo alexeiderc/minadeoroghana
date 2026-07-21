@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 import { locales } from "@/i18n/config";
 
-const baseUrl = "https://www.goldminecorp.com";
+const baseUrl = "https://www.mcquestgoldmining.com";
 
 const routes = [
   "",

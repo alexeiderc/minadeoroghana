@@ -3,31 +3,18 @@
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import { motion } from "framer-motion";
-import { MapPin, Phone, Mail, MessageCircle, Clock, ArrowRight } from "lucide-react";
+import { MapPin, Phone, Mail, MessageCircle, Clock, ArrowRight, FileText } from "lucide-react";
 import ContactForm from "@/components/contact-form";
 import MapSection from "@/components/map-section";
-
-const contactCards = [
-  { icon: MapPin, key: "headquarters", value: "address", href: null },
-  { icon: Phone, key: "phoneLabel", value: "phone", href: "tel:+233301234567" },
-  { icon: Mail, key: "emailLabel", value: "email", href: "mailto:info@goldminecorp.com" },
-  {
-    icon: MessageCircle,
-    key: "whatsappLabel",
-    value: "whatsapp",
-    href: "https://wa.me/233301234567",
-  },
-  { icon: Clock, key: "hoursLabel", value: "hours", href: null },
-];
 
 const officeMarker = [
   {
     id: "hq",
-    name: "GoldMine Corp HQ",
+    name: "MC QUEST GOLD & DIAMOND MINING INDUSTRY LTD",
     type: "Headquarters",
-    lat: 6.6019,
-    lng: -0.1870,
-    description: "15 Gold Coast Avenue, Airport City, Accra, Ghana",
+    lat: 5.6698,
+    lng: -0.0166,
+    description: "DTD GT-344-7879 14 TEMA WEST ACCRA GHANA",
   },
 ];
 
@@ -35,6 +22,15 @@ export default function ContactPage() {
   const t = useTranslations("contact");
   const tNav = useTranslations("nav");
   const tCommon = useTranslations("common");
+
+  const contactCards = [
+    { icon: MapPin, label: t("info.headquarters"), value: "DTD GT-344-7879 14 TEMA WEST ACCRA GHANA", href: null },
+    { icon: Phone, label: t("info.phone"), value: "+233 (0) 257-055-1514", href: "tel:+2332570551514" },
+    { icon: MessageCircle, label: t("info.whatsapp"), value: "+233 (0) 570-551-514", href: "https://wa.me/233570551514" },
+    { icon: Mail, label: t("info.email"), value: "info@mcquestgoldmining.com", href: "mailto:info@mcquestgoldmining.com" },
+    { icon: Clock, label: t("info.hours"), value: "Mon — Fri: 8:00 AM — 5:00 PM (GMT)", href: null },
+    { icon: FileText, label: t("info.registration"), value: t("info.registrationValue"), href: null },
+  ];
 
   return (
     <>
@@ -114,7 +110,7 @@ export default function ContactPage() {
                 {t("infoSubtitle")}
               </p>
 
-              {contactCards.map((card) => {
+              {contactCards.map((card, i) => {
                 const Icon = card.icon;
                 const content = (
                   <div className="flex items-start gap-4 p-5 rounded-2xl bg-gold-50/50 border border-gold-100/40 hover:border-primary/30 transition-all group">
@@ -123,10 +119,10 @@ export default function ContactPage() {
                     </div>
                     <div className="min-w-0">
                       <p className="text-sm font-semibold text-slate-custom mb-1">
-                        {t(`info.${card.key}`)}
+                        {card.label}
                       </p>
                       <p className="text-sm text-slate-custom/60 break-words">
-                        {t(`info.${card.value}`)}
+                        {card.value}
                       </p>
                     </div>
                   </div>
@@ -135,7 +131,7 @@ export default function ContactPage() {
                 if (card.href) {
                   return (
                     <a
-                      key={card.key}
+                      key={i}
                       href={card.href}
                       target={card.href.startsWith("http") ? "_blank" : undefined}
                       rel={card.href.startsWith("http") ? "noopener noreferrer" : undefined}
@@ -145,7 +141,7 @@ export default function ContactPage() {
                     </a>
                   );
                 }
-                return <div key={card.key}>{content}</div>;
+                return <div key={i}>{content}</div>;
               })}
             </motion.div>
           </div>
@@ -177,7 +173,7 @@ export default function ContactPage() {
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.7, delay: 0.2 }}
           >
-            <MapSection markers={officeMarker} center={[6.6019, -0.1870]} zoom={14} />
+            <MapSection markers={officeMarker} center={[5.6698, -0.0166]} zoom={14} />
           </motion.div>
         </div>
       </section>
