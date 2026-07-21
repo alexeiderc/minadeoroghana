@@ -56,13 +56,8 @@ export default function Navbar() {
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full">
           <div className="flex items-center justify-between h-full">
-            <Link href="/" className="flex items-center gap-2 shrink-0">
-              <div className="w-9 h-9 rounded-lg gold-gradient flex items-center justify-center">
-                <span className="text-dark font-bold text-sm font-[family-name:var(--font-heading)]">MC</span>
-              </div>
-              <span className="text-lg font-bold gold-text font-[family-name:var(--font-heading)] tracking-wide hidden sm:inline">
-                MC QUEST
-              </span>
+            <Link href="/" className="flex items-center shrink-0">
+              <img src="/logo-compact.svg" alt="MC QUEST Gold & Diamond Mining" className="h-9 w-auto" />
             </Link>
 
             <nav className="hidden xl:flex items-center gap-1">

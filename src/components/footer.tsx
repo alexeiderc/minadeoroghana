@@ -48,13 +48,8 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
           <div className="lg:col-span-1">
-            <Link href="/" className="flex items-center gap-2 mb-6">
-              <div className="w-9 h-9 rounded-lg gold-gradient flex items-center justify-center">
-                <span className="text-dark font-bold text-sm font-[family-name:var(--font-heading)]">MC</span>
-              </div>
-              <span className="text-lg font-bold gold-text font-[family-name:var(--font-heading)] tracking-wide">
-                MC QUEST
-              </span>
+            <Link href="/" className="mb-6 block">
+              <img src="/logo-light.svg" alt="MC QUEST Gold & Diamond Mining" className="h-10 w-auto" />
             </Link>
             <p className="text-white/50 text-sm leading-relaxed mb-6">
               {t("companyDesc")}

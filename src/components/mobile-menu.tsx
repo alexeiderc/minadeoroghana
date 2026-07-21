@@ -43,9 +43,7 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
         )}
       >
         <div className="flex items-center justify-between p-6 border-b border-white/10">
-          <span className="text-xl font-bold gold-text font-[family-name:var(--font-heading)]">
-            MC QUEST
-          </span>
+          <img src="/logo-compact-light.svg" alt="MC QUEST" className="h-8 w-auto" />
           <button
             onClick={onClose}
             className="p-2 text-white/70 hover:text-white transition-colors"

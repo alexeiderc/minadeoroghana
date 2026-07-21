@@ -1,0 +1,24 @@
+<svg width="280" height="80" xmlns="http://www.w3.org/2000/svg">
+ <polygon points="40,5 75,40 40,75 5,40"
+ fill="none"
+ stroke="#D4AF37"
+ stroke-width="5"/>
+ <text x="12" y="50"
+ font-size="26"
+ font-weight="bold"
+ font-family="Montserrat"
+ fill="#D4AF37">
+ MCQ
+ </text>
+ <text x="95" y="40"
+ font-size="26"
+ font-family="Montserrat"
+ fill="#111">
+ MC QUEST
+ </text>
+ <text x="95" y="62"
+ font-size="11"
+ fill="#999">
+ GOLD &amp; DIAMOND MINING
+ </text>
+</svg>

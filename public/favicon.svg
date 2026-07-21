@@ -1,4 +1,14 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-  <rect width="32" height="32" rx="6" fill="#0A0A0A"/>
-  <text x="16" y="22" text-anchor="middle" font-family="serif" font-weight="bold" font-size="18" fill="#C8A24A">M</text>
+<svg width="120" height="120" xmlns="http://www.w3.org/2000/svg">
+ <rect width="120" height="120" rx="20" fill="#0A0A0A"/>
+ <polygon points="60,15 95,60 60,105 25,60"
+ fill="none"
+ stroke="#D4AF37"
+ stroke-width="5"/>
+ <text x="35" y="72"
+ font-size="28"
+ font-weight="bold"
+ font-family="Montserrat"
+ fill="#D4AF37">
+ MCQ
+ </text>
 </svg>
