@@ -186,7 +186,7 @@ export default function ContactPage() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.7 }}
-            className="relative overflow-hidden rounded-3xl dark-gradient p-12 sm:p-16 text-center"
+            className="relative overflow-hidden rounded-3xl dark-gradient p-8 sm:p-12 lg:p-16 text-center"
           >
             <div className="absolute inset-0 opacity-20">
               <div className="absolute top-0 right-0 w-96 h-96 bg-primary/10 rounded-full blur-3xl" />

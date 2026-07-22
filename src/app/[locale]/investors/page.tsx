@@ -67,7 +67,7 @@ export default function InvestorsPage() {
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-white/10 bg-white/5 backdrop-blur-sm mb-6">
               <TrendingUp className="w-4 h-4 text-primary" />
               <span className="text-sm text-white/70 font-medium">
-                Mina De Oro Ghana
+                MC QUEST GOLD & DIAMOND
               </span>
             </div>
           </motion.div>
@@ -158,7 +158,7 @@ export default function InvestorsPage() {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeader title={t("presentations")} subtitle={t("subtitle")} />
           <ScrollReveal>
-            <div className="max-w-2xl mx-auto p-12 rounded-2xl border-2 border-dashed border-gold-200 text-center">
+            <div className="max-w-2xl mx-auto p-8 sm:p-12 rounded-2xl border-2 border-dashed border-gold-200 text-center">
               <Presentation className="w-12 h-12 text-primary/40 mx-auto mb-4" />
               <p className="text-slate-custom/50 font-medium">
                 Presentations coming soon.

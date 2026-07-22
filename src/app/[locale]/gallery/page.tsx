@@ -114,7 +114,7 @@ export default function GalleryPage() {
                 <button
                   key={cat}
                   onClick={() => setActiveCategory(cat)}
-                  className={`px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-300 ${
+                  className={`px-4 py-2 sm:px-5 sm:py-2.5 rounded-full text-xs sm:text-sm font-semibold transition-all duration-300 ${
                     activeCategory === cat
                       ? "gold-gradient text-dark shadow-md"
                       : "bg-gold-50 text-slate-custom/60 hover:bg-gold-100 hover:text-slate-custom"

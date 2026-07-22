@@ -30,14 +30,14 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
     <>
       {isOpen && (
         <div
-          className="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 lg:hidden"
+          className="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 xl:hidden"
           onClick={onClose}
         />
       )}
 
       <div
         className={clsx(
-          "fixed top-0 right-0 h-full w-full max-w-sm bg-dark z-50 lg:hidden",
+          "fixed top-0 right-0 h-full w-full max-w-sm bg-dark z-50 xl:hidden",
           "transform transition-transform duration-500 ease-[cubic-bezier(0.22,1,0.36,1)]",
           isOpen ? "translate-x-0" : "translate-x-full"
         )}

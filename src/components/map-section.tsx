@@ -46,21 +46,25 @@ export default function MapSection({
   height = "500px",
 }: MapSectionProps) {
   const [mounted, setMounted] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
     setMounted(true);
+    setIsMobile(window.innerWidth < 640);
   }, []);
+
+  const mapHeight = mounted && isMobile ? "50vh" : height;
 
   if (!mounted) {
     return (
-      <div className="w-full bg-slate-custom/5 rounded-2xl flex items-center justify-center" style={{ height }}>
+      <div className="w-full bg-slate-custom/5 rounded-2xl flex items-center justify-center" style={{ height: mapHeight }}>
         <div className="w-8 h-8 border-2 border-primary/30 border-t-primary rounded-full animate-spin" />
       </div>
     );
   }
 
   return (
-    <div className="w-full rounded-2xl overflow-hidden border border-gold-100/30" style={{ height }}>
+    <div className="w-full rounded-2xl overflow-hidden border border-gold-100/30" style={{ height: mapHeight }}>
       <MapContainer
         center={center}
         zoom={zoom}

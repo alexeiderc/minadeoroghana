@@ -182,7 +182,7 @@ export default function AboutPage() {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <SectionHeader title={t("team")} subtitle={t("teamDesc")} />
           <ScrollReveal>
-            <div className="bg-white rounded-2xl p-12 border border-gold-100/50">
+            <div className="bg-white rounded-2xl p-8 sm:p-12 border border-gold-100/50">
               <Users className="w-16 h-16 text-primary/30 mx-auto mb-6" />
               <p className="text-slate-custom/50 text-lg">
                 {t("teamPlaceholder")}
