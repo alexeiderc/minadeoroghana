@@ -119,6 +119,29 @@
       radial-gradient(circle at 20% 80%, rgba(200, 162, 74, 0.03) 0%, transparent 50%),
       radial-gradient(circle at 80% 20%, rgba(200, 162, 74, 0.03) 0%, transparent 50%);
   }
+
+  /* Orphan row centering for grids */
+  /* 5 items, 2-col (mobile <768px): center orphan 5th */
+  @media (max-width: 767px) {
+    .orphan-center > :nth-child(5):last-child {
+      justify-self: center;
+    }
+  }
+  /* 5 items, 3-col (tablet 768-1023px): center orphans 4th+5th */
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .orphan-center > :nth-last-child(2) {
+      justify-self: center;
+    }
+    .orphan-center > :last-child {
+      justify-self: center;
+    }
+  }
+  /* 3 items, 2-col (sm 640-1023px): center orphan 3rd */
+  @media (min-width: 640px) and (max-width: 1023px) {
+    .orphan-center-three > :nth-child(3):last-child {
+      justify-self: center;
+    }
+  }
 }
 
 @layer base {

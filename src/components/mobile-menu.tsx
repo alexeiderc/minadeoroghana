@@ -72,7 +72,7 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
           <p className="text-xs text-white/40 uppercase tracking-wider mb-3 px-4">
             {t("nav.home") ? "Language" : "Language"}
           </p>
-          <div className="grid grid-cols-2 gap-2">
+          <div className="grid grid-cols-2 gap-2 orphan-center">
             {locales.map((locale) => (
               <button
                 key={locale}

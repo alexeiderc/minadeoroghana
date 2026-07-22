@@ -111,7 +111,7 @@ export default function OperationsPage() {
 
                   {/* Stats Grid */}
                   {op.stats && op.stats.length > 0 && (
-                    <div className="flex-1 grid grid-cols-2 sm:grid-cols-3 gap-4">
+                    <div className="flex-1 grid grid-cols-2 sm:grid-cols-3 gap-4 orphan-center-three">
                       {op.stats.map((stat, j) => {
                         const statLabel = t(
                           stat.labelKey.replace(/^operations\./, "")

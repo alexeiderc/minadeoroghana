@@ -171,7 +171,7 @@ export default function HomePage() {
               {tMetrics("subtitle")}
             </p>
           </div>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 orphan-center">
             {metrics.map((metric, i) => (
               <MetricCard
                 key={i}
@@ -191,7 +191,7 @@ export default function HomePage() {
             title={tSustainability("title")}
             subtitle={tSustainability("subtitle")}
           />
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 orphan-center-three">
             {sustainabilityItems.slice(0, 3).map((item) => {
               const Icon = sustainabilityIconMap[item.icon] ?? TreePine;
               return (

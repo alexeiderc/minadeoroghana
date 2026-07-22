@@ -101,7 +101,7 @@ export default function InvestorsPage() {
       <section className="section-padding bg-[#F5F5F5]">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeader title={t("financial")} subtitle={t("subtitle")} />
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6 orphan-center">
             {highlights.map((item, i) => (
               <ScrollReveal key={item.label} delay={i * 0.1}>
                 <MetricCard

@@ -34,7 +34,7 @@ export default function OperationsCard({
         </div>
 
         {stats && stats.length > 0 && (
-          <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 pt-6 border-t border-gold-100/50">
+          <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 pt-6 border-t border-gold-100/50 orphan-center-three">
             {stats.map((stat, i) => (
               <div key={i} className="text-center">
                 <p className="text-lg font-bold text-primary">

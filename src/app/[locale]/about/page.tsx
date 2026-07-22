@@ -101,7 +101,7 @@ export default function AboutPage() {
       {/* Company Stats */}
       <section className="section-padding bg-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
+          <div className="grid grid-cols-2 md:grid-cols-5 gap-4 orphan-center">
             {stats.map((stat, i) => (
               <ScrollReveal key={i} delay={i * 0.1}>
                 <div className="flex flex-col items-center justify-center text-center p-6 rounded-2xl bg-neutral-custom border border-gold-100/50 group hover:border-primary/30 transition-colors min-h-[160px]">

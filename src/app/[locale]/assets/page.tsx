@@ -91,7 +91,7 @@ export default function AssetsPage() {
       {/* Asset Cards Grid */}
       <section className="section-padding bg-neutral-custom mine-pattern">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 orphan-center">
             {miningAssets.map((asset, i) => {
               const config = typeConfig[asset.type] ?? typeConfig.mine;
               const TypeIcon = config.icon;
