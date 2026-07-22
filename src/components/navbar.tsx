@@ -48,24 +48,24 @@ export default function Navbar() {
     <>
       <header
         className={clsx(
-          "fixed top-0 left-0 right-0 z-50 h-[80px] transition-all duration-300",
+          "fixed top-0 left-0 right-0 z-50 h-[80px] transition-all duration-500",
           scrolled
-            ? "bg-dark/90 backdrop-blur-xl shadow-lg shadow-black/20 border-b border-white/5"
-            : "bg-dark/60 backdrop-blur-md"
+            ? "bg-charcoal/95 backdrop-blur-xl shadow-2xl shadow-black/40 border-b border-primary/10"
+            : "bg-charcoal/40 backdrop-blur-sm"
         )}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full">
           <div className="flex items-center justify-between h-full">
             <Link href="/" className="flex items-center shrink-0">
-              <img src="/logo-compact.svg" alt="MC QUEST Gold & Diamond Mining" className="h-11 w-auto" />
+              <img src="/logo-compact.svg" alt="MC QUEST Gold & Diamond Mining" className="h-10 w-auto" />
             </Link>
 
-            <nav className="hidden xl:flex items-center gap-1">
+            <nav className="hidden xl:flex items-center gap-0.5">
               {navItems.map((item) => (
                 <Link
                   key={item.key}
                   href={item.href}
-                  className="px-3 py-2 text-sm font-medium text-white/70 hover:text-white rounded-lg hover:bg-white/5 transition-colors"
+                  className="px-3 py-2 text-xs font-medium tracking-wider uppercase text-stone/80 hover:text-primary rounded transition-colors duration-300"
                 >
                   {t(item.key)}
                 </Link>
@@ -76,16 +76,16 @@ export default function Navbar() {
               <LanguageSwitcher />
               <Link
                 href="/contact"
-                className="hidden sm:inline-flex px-5 py-2.5 rounded-lg gold-gradient text-dark text-sm font-semibold hover:opacity-90 transition-opacity"
+                className="hidden sm:inline-flex px-5 py-2 rounded gold-gradient text-charcoal text-xs font-bold uppercase tracking-wider hover:opacity-90 transition-opacity"
               >
                 {t("hero.cta2")}
               </Link>
               <button
                 onClick={() => setMobileOpen(true)}
-                className="xl:hidden p-2 text-white/80 hover:text-white transition-colors"
+                className="xl:hidden p-2 text-stone/80 hover:text-primary transition-colors"
                 aria-label="Open menu"
               >
-                <Menu className="w-6 h-6" />
+                <Menu className="w-5 h-5" />
               </button>
             </div>
           </div>

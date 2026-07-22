@@ -330,6 +330,81 @@
     "termsTitle": "Terms of Service",
     "lastUpdated": "Last updated"
   },
+  "home": {
+    "sections": {
+      "ghana": {
+        "tag": "Location",
+        "title": "Ghana & Our Concessions",
+        "description": "MC QUEST operates in Ghana's Eastern Region — Africa's most prolific gold-producing corridor. Our 405-hectare concession area spans over 1,000 mining rights, strategically positioned within the Au-Ag epithermal belt, 100 km from Accra.",
+        "area": "Total Concession Area",
+        "concessions": "Mining Concessions"
+      },
+      "lidar": {
+        "tag": "Technology",
+        "title": "LiDAR 3D Survey & Drone Mapping",
+        "description": "Our mining drones equipped with LiDAR 3D technology produce centimetre-accurate terrain models, enabling precise deposit identification and resource estimation before a single shovel hits the ground.",
+        "model": "Terrain Model",
+        "resolution": "Point Resolution"
+      },
+      "geology": {
+        "tag": "Geology",
+        "title": "Geology & Ore Body",
+        "description": "High-sulfidation epithermal gold mineralization hosted in volcanic rocks with alluvial and illuvial deposits. Drill-confirmed across multiple benches with consistent grade distribution.",
+        "method": "Diamond & RC Drilling",
+        "methodDesc": "DDH, RC, and rotary air drilling across the concession"
+      },
+      "resource": {
+        "tag": "Resource Estimation",
+        "title": "Resource Identification",
+        "description": "Mineral resources estimated by Mining Plus using industry-standard methodologies. Drill hole data confirms significant gold mineralization with attractive grade-tonnage characteristics.",
+        "ounces": "Indicated Ounces",
+        "grade": "Average Grade",
+        "recovery": "Recovery Rate"
+      },
+      "mining": {
+        "tag": "Operations",
+        "title": "Mining Operations",
+        "description": "Surface mining with a low waste-to-ore ratio, guided by LiDAR drone data. Each bench is precisely mapped to maximize ore recovery and minimize environmental disturbance.",
+        "step1": "LiDAR drone survey & 3D terrain model",
+        "step2": "Bench design & waste stripping",
+        "step3": "Ore extraction & grade control",
+        "step4": "Haul to processing facility"
+      },
+      "processing": {
+        "tag": "Processing",
+        "title": "Ore Processing & Recovery",
+        "description": "Modern crushing, grinding, and non-mercury CIL circuits process ore on-site. Zero cyanide discharge with tailings managed to international environmental standards.",
+        "environment": "Zero Cyanide",
+        "environmentDesc": "Non-mercury, cyanide-free recovery process",
+        "efficiency": "High Recovery",
+        "efficiencyDesc": "90% gold recovery rate achieved"
+      },
+      "gold": {
+        "tag": "Production",
+        "title": "Gold Production",
+        "description": "Pure gold dore bars produced at our on-site smelting facility. LBMA-compliant purity with full chain-of-custody documentation for international export.",
+        "purity": "Gold Purity",
+        "standard": "LBMA Standard"
+      },
+      "corporate": {
+        "tag": "Responsibility",
+        "title": "Corporate Responsibility",
+        "description": "Mining with purpose. Our operations create lasting value for Ghana's Eastern Region through employment, infrastructure, education, and environmental stewardship.",
+        "pillar1": "Environmental Stewardship",
+        "pillar1Desc": "Non-mercury processing, reforestation, water management",
+        "pillar2": "Safety & Compliance",
+        "pillar2Desc": "Full compliance with Ghana Minerals and Mining Act",
+        "pillar3": "Community Investment",
+        "pillar3Desc": "Local employment, education, healthcare programs"
+      },
+      "contact": {
+        "tag": "Contact",
+        "title": "Partner With Us",
+        "description": "Whether you are an investor, technical partner, or community stakeholder — we welcome the conversation. Our operations office in Tema West, Accra is open for meetings.",
+        "cta": "Get in Touch"
+      }
+    }
+  },
   "common": {
     "learnMore": "Learn More",
     "viewDetails": "View Details",

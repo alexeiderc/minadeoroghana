@@ -1,5 +1,19 @@
 import type { Metadata, Viewport } from "next";
+import { Cinzel, Inter } from "next/font/google";
 import "./globals.css";
+
+const cinzel = Cinzel({
+  subsets: ["latin"],
+  variable: "--font-heading",
+  display: "swap",
+  weight: ["400", "500", "600", "700", "800", "900"],
+});
+
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-body",
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   title: {
@@ -50,7 +64,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html suppressHydrationWarning>
+    <html suppressHydrationWarning className={`${cinzel.variable} ${inter.variable}`}>
       <body suppressHydrationWarning>{children}</body>
     </html>
   );

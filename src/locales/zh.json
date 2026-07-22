@@ -330,6 +330,81 @@
     "termsTitle": "服務條款",
     "lastUpdated": "最後更新"
   },
+  "home": {
+    "sections": {
+      "ghana": {
+        "tag": "位置",
+        "title": "迦納與我們的採礦權",
+        "description": "MC QUEST 在迦納東部地區運營——非洲最豐富的黃金產區。我們 405 公頃的礦區涵蓋超過 1,000 項採礦權，戰略性地位於 Au-Ag 淺成熱液礦帶內，距阿克拉 100 公里。",
+        "area": "總礦區面積",
+        "concessions": "採礦權數量"
+      },
+      "lidar": {
+        "tag": "技術",
+        "title": "LiDAR 3D 測量與無人機繪圖",
+        "description": "我們配備 LiDAR 3D 技術的礦用無人機可生成釐米級精度的地形模型，在任何挖掘作業開始前即可實現精確的礦床識別和資源估算。",
+        "model": "地形模型",
+        "resolution": "點位精度"
+      },
+      "geology": {
+        "tag": "地質",
+        "title": "地質與礦體",
+        "description": "高硫化淺成熱液型金礦化賦存於火山岩中，伴生沖積和淋積礦床。經鑽探確認跨越多個台階，品位分布穩定。",
+        "method": "金剛石鑽探與反循環鑽探",
+        "methodDesc": "DDH、RC 和旋轉空氣鑽探貫穿整個礦區"
+      },
+      "resource": {
+        "tag": "資源估算",
+        "title": "資源識別",
+        "description": "礦產資源由 Mining Plus 採用行業標準方法估算。鑽孔數據確認了具有顯著品位-噸位特徵的重要金礦化。",
+        "ounces": "推斷金盎司數",
+        "grade": "平均品位",
+        "recovery": "回收率"
+      },
+      "mining": {
+        "tag": "運營",
+        "title": "採礦作業",
+        "description": "在 LiDAR 無人機數據指導下進行低廢石比的露天開採。每個台階都經過精確測繪，以最大化礦石回收率並最小化環境干擾。",
+        "step1": "LiDAR 無人機測量與 3D 地形模型",
+        "step2": "台階設計與廢石剝離",
+        "step3": "礦石開採與品位控制",
+        "step4": "運輸至選礦廠"
+      },
+      "processing": {
+        "tag": "選礦",
+        "title": "礦石加工與回收",
+        "description": "現代破碎、研磨和無汞 CIL 工藝在現場處理礦石。零氰化物排放，尾礦按國際環保標準管理。",
+        "environment": "零氰化物",
+        "environmentDesc": "無汞無氰回收工藝",
+        "efficiency": "高回收率",
+        "efficiencyDesc": "達成 90% 金回收率"
+      },
+      "gold": {
+        "tag": "生產",
+        "title": "黃金生產",
+        "description": "在現場冶煉設施生產的純金大板條。符合 LBMA 標準的純度，附完整的監管鏈文件用於國際出口。",
+        "purity": "黃金純度",
+        "standard": "LBMA 標準"
+      },
+      "corporate": {
+        "tag": "責任",
+        "title": "企業責任",
+        "description": "以目標驅動的採礦。我們的運營通過就業、基礎設施、教育和環境保護為迦納東部地區創造持久價值。",
+        "pillar1": "環境管理",
+        "pillar1Desc": "無汞加工、植樹造林、水資源管理",
+        "pillar2": "安全與合規",
+        "pillar2Desc": "完全符合迦納礦物和採礦法",
+        "pillar3": "社區投資",
+        "pillar3Desc": "本地就業、教育、醫療保健計劃"
+      },
+      "contact": {
+        "tag": "聯繫",
+        "title": "與我們合作",
+        "description": "無論您是投資者、技術合作夥伴還是社區利益相關者——我們歡迎對話。我們位於 Tema West, Accra 的運營辦公室歡迎拜訪。",
+        "cta": "聯繫我們"
+      }
+    }
+  },
   "common": {
     "learnMore": "了解更多",
     "viewDetails": "查看詳情",

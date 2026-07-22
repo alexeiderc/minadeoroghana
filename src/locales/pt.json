@@ -330,6 +330,81 @@
     "termsTitle": "Termos de Serviço",
     "lastUpdated": "Última atualização"
   },
+  "home": {
+    "sections": {
+      "ghana": {
+        "tag": "Localização",
+        "title": "Ghana e Nossas Concessões",
+        "description": "A MC QUEST opera na Região Oriental do Ghana — o corredor produtor de ouro mais prolífico da África. Nossa área de concessão de 405 hectares abrange mais de 1.000 direitos mineros, estrategicamente posicionada no cinturão epitermal Au-Ag, a 100 km de Accra.",
+        "area": "Área Total de Concessões",
+        "concessions": "Concessões de Mineração"
+      },
+      "lidar": {
+        "tag": "Tecnologia",
+        "title": "Levantamento LiDAR 3D e Mapeamento com Drones",
+        "description": "Nossos drones de mineração equipados com tecnologia LiDAR 3D produzem modelos de terreno com precisão centimétrica, permitindo identificação precisa de depósitos e estimativa de recursos antes de qualquer escavação.",
+        "model": "Modelo de Terreno",
+        "resolution": "Resolução de Pontos"
+      },
+      "geology": {
+        "tag": "Geologia",
+        "title": "Geologia e Corpo do Mineral",
+        "description": "Mineralização epitermal de alta sulfurização hospedada em rochas vulcânicas com depósitos aluviais e iluviais. Confirmado por perfuração em múltiplos bancos com distribuição de teor consistente.",
+        "method": "Perfuriação Diamantina e RC",
+        "methodDesc": "DDH, RC e perfuração rotativa por ar na concessão"
+      },
+      "resource": {
+        "tag": "Estimativa de Recursos",
+        "title": "Identificação de Recursos",
+        "description": "Recursos minerais estimados pela Mining Plus utilizando metodologias padrão da indústria. Dados de perfuração confirmam mineralização de ouro significativa com características atraentes de teor-tonelagem.",
+        "ounces": "Onças Indicadas",
+        "grade": "Teor Médio",
+        "recovery": "Taxa de Recuperação"
+      },
+      "mining": {
+        "tag": "Operações",
+        "title": "Operações de Mineração",
+        "description": "Mineração a céu aberto com baixa relação estéril-minério, guiada por dados de drones LiDAR. Cada banco é mapeado com precisão para maximizar a recuperação do minério e minimizar impactos ambientais.",
+        "step1": "Levantamento com drone LiDAR e modelo 3D do terreno",
+        "step2": "Design de bancos e remoção de estéril",
+        "step3": "Extração de minério e controle de teor",
+        "step4": "Transporte para a instalação de processamento"
+      },
+      "processing": {
+        "tag": "Processamento",
+        "title": "Processamento e Recuperação do Minério",
+        "description": "Circuitos modernos de britagem, moagem e CIL sem mercúrio processam o minério no local. Zero descarga de cianeto com rejeitos gerenciados segundo padrões internacionais.",
+        "environment": "Zero Cianeto",
+        "environmentDesc": "Processo de recuperação sem mercúrio nem cianeto",
+        "efficiency": "Alta Recuperação",
+        "efficiencyDesc": "90% de taxa de recuperação de ouro alcançada"
+      },
+      "gold": {
+        "tag": "Produção",
+        "title": "Produção de Ouro",
+        "description": "Barras de ouro puro dore produzidas em nossa instalação de fundição no local. Pureza conforme LBMA com documentação completa de cadeia de custódia para exportação internacional.",
+        "purity": "Pureza do Ouro",
+        "standard": "Padrão LBMA"
+      },
+      "corporate": {
+        "tag": "Responsabilidade",
+        "title": "Responsabilidade Corporativa",
+        "description": "Mineração com propósito. Nossas operações criam valor duradouro para a Região Oriental do Ghana através de emprego, infraestrutura, educação e gestão ambiental.",
+        "pillar1": "Gestão Ambiental",
+        "pillar1Desc": "Processamento sem mercúrio, reflorestamento, gestão hídrica",
+        "pillar2": "Segurança e Conformidade",
+        "pillar2Desc": "Total conformidade com a Lei de Minerais e Mineração do Ghana",
+        "pillar3": "Investimento Comunitário",
+        "pillar3Desc": "Emprego local, educação, programas de saúde"
+      },
+      "contact": {
+        "tag": "Contato",
+        "title": "Seja Nosso Parceiro",
+        "description": "Seja investidor, parceiro técnico ou membro da comunidade — estamos abertos ao diálogo. Nosso escritório de operações em Tema West, Accra está disponível para reuniões.",
+        "cta": "Fale Conosco"
+      }
+    }
+  },
   "common": {
     "learnMore": "Saiba Mais",
     "viewDetails": "Ver Detalhes",
