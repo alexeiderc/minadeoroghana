@@ -66,6 +66,27 @@
     background-clip: text;
   }
 
+  .gold-shimmer {
+    background: linear-gradient(
+      90deg,
+      #C8A24A 0%,
+      #E8D48B 25%,
+      #FFF5CC 50%,
+      #E8D48B 75%,
+      #C8A24A 100%
+    );
+    background-size: 200% 100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: shimmer 3s ease-in-out infinite;
+  }
+
+  @keyframes shimmer {
+    0% { background-position: -200% center; }
+    100% { background-position: 200% center; }
+  }
+
   .card-hover {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
