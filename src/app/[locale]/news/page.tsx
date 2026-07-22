@@ -221,7 +221,13 @@ export default function NewsPage() {
                 <div className="flex items-center justify-center gap-3 mt-4 text-xs text-slate-custom/40">
                   <span>
                     {t("news.lastUpdate")}:{" "}
-                    {new Date(goldbodLastUpdate).toLocaleString()}
+                    {new Date(goldbodLastUpdate).toLocaleString("en-US", {
+                      year: "numeric",
+                      month: "short",
+                      day: "numeric",
+                      hour: "2-digit",
+                      minute: "2-digit",
+                    })}
                   </span>
                   {goldbodCached && (
                     <span className="px-2 py-0.5 rounded-full bg-primary/10 text-primary">

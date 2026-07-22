@@ -43,7 +43,7 @@ export default function AnimatedCounter({
 
   const display = decimals > 0
     ? count.toFixed(decimals)
-    : Math.floor(count).toLocaleString();
+    : Math.floor(count).toLocaleString("en-US");
 
   return (
     <span ref={ref} className="tabular-nums">

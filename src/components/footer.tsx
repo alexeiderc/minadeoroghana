@@ -157,7 +157,7 @@ export default function Footer() {
 
         <div className="border-t border-white/10 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-white/30 text-sm">
-            © {new Date().getFullYear()} {t("copyright")}
+            © <span suppressHydrationWarning>{new Date().getFullYear()}</span> {t("copyright")}
           </p>
           <p className="text-white/30 text-xs">
             {t("madeWith")}

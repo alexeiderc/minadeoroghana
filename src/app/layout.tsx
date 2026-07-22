@@ -3,11 +3,11 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: {
-    default: "Mina De Oro Ghana | Sustainable Gold Mining",
-    template: "%s | Mina De Oro Ghana",
+    default: "MC QUEST GOLD & DIAMOND MINING INDUSTRY LTD",
+    template: "%s | MC QUEST GOLD & DIAMOND MINING INDUSTRY LTD",
   },
   description:
-    "Mina De Oro Ghana — surface gold mining in Ghana's Eastern Region using LiDAR 3D drone technology and non-mercury, cyanide-free gold recovery.",
+    "MC QUEST GOLD & DIAMOND MINING INDUSTRY LTD — sustainable gold and diamond mining in Ghana's Eastern Region using LiDAR 3D drone technology and non-mercury, cyanide-free recovery.",
   keywords: [
     "gold mining",
     "Ghana",
@@ -16,22 +16,23 @@ export const metadata: Metadata = {
     "non-mercury",
     "cyanide-free",
     "Eastern Region",
+    "MC QUEST",
   ],
-  authors: [{ name: "Mina De Oro Ghana" }],
-  creator: "Mina De Oro Ghana",
+  authors: [{ name: "MC QUEST GOLD & DIAMOND MINING INDUSTRY LTD" }],
+  creator: "MC QUEST GOLD & DIAMOND MINING INDUSTRY LTD",
   openGraph: {
     type: "website",
     locale: "en_US",
-    siteName: "Mina De Oro Ghana",
-    title: "Mina De Oro Ghana | Sustainable Gold Mining",
+    siteName: "MC QUEST GOLD & DIAMOND MINING INDUSTRY LTD",
+    title: "MC QUEST GOLD & DIAMOND MINING INDUSTRY LTD",
     description:
-      "Surface gold mining in Ghana's Eastern Region using LiDAR 3D drone technology and non-mercury, cyanide-free gold recovery.",
+      "Sustainable gold and diamond mining in Ghana's Eastern Region using LiDAR 3D drone technology and non-mercury, cyanide-free recovery.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Mina De Oro Ghana | Sustainable Gold Mining",
+    title: "MC QUEST GOLD & DIAMOND MINING INDUSTRY LTD",
     description:
-      "Surface gold mining in Ghana's Eastern Region using LiDAR 3D drone technology and non-mercury, cyanide-free gold recovery.",
+      "Sustainable gold and diamond mining in Ghana's Eastern Region using LiDAR 3D drone technology and non-mercury, cyanide-free recovery.",
   },
   icons: {
     icon: "/favicon.svg",
@@ -49,8 +50,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html>
-      <body>{children}</body>
+    <html suppressHydrationWarning>
+      <body suppressHydrationWarning>{children}</body>
     </html>
   );
 }

@@ -38,7 +38,7 @@ export default function OperationsCard({
             {stats.map((stat, i) => (
               <div key={i} className="text-center">
                 <p className="text-lg font-bold text-primary">
-                  {stat.value.toLocaleString()}{stat.suffix}
+                  {stat.value.toLocaleString("en-US")}{stat.suffix}
                 </p>
                 <p className="text-xs text-slate-custom/50 mt-1">{stat.label}</p>
               </div>
