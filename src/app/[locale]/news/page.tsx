@@ -179,8 +179,8 @@ export default function NewsPage() {
               {filteredCompanyArticles.map((article) => (
                 <NewsCard
                   key={article.id}
-                  title={t(article.titleKey)}
-                  excerpt={t(article.excerptKey)}
+                  title={t(`news.${article.titleKey}`)}
+                  excerpt={t(`news.${article.excerptKey}`)}
                   date={new Date(article.date).toLocaleDateString("en-US", {
                     year: "numeric",
                     month: "long",
