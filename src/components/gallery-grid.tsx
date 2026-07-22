@@ -57,7 +57,7 @@ export default function GalleryGrid({ items }: GalleryGridProps) {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="fixed inset-0 bg-dark/90 backdrop-blur-sm z-50 flex items-center justify-center p-4"
+            className="fixed inset-0 bg-dark/90 z-50 flex items-center justify-center p-4"
             onClick={() => setSelected(null)}
           >
             <motion.div
@@ -71,7 +71,7 @@ export default function GalleryGrid({ items }: GalleryGridProps) {
               <p className="text-white text-center mt-4 text-lg font-semibold">{selected.title}</p>
               <button
                 onClick={() => setSelected(null)}
-                className="absolute -top-3 -right-3 p-2 bg-white/10 backdrop-blur-sm rounded-full text-white hover:bg-white/20 transition-colors"
+                className="absolute -top-3 -right-3 p-2 bg-white/10 rounded-full text-white hover:bg-white/20 transition-colors"
               >
                 <X className="w-5 h-5" />
               </button>

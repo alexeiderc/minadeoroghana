@@ -17,13 +17,13 @@ export default function LanguageSwitcher() {
   const currentLocale = t("nav.home") ? "en" : "en";
 
   useEffect(() => {
-    function handleClickOutside(e: MouseEvent) {
+    function handleClickOutside(e: PointerEvent) {
       if (dropdownRef.current && !dropdownRef.current.contains(e.target as Node)) {
         setIsOpen(false);
       }
     }
-    document.addEventListener("mousedown", handleClickOutside);
-    return () => document.removeEventListener("mousedown", handleClickOutside);
+    document.addEventListener("pointerdown", handleClickOutside);
+    return () => document.removeEventListener("pointerdown", handleClickOutside);
   }, []);
 
   function handleLocaleChange(locale: Locale) {
@@ -60,7 +60,7 @@ export default function LanguageSwitcher() {
                   : "text-white/70 hover:text-white hover:bg-white/5"
               )}
             >
-              <img src={localeFlags[locale]} alt="" className="w-5 h-4 rounded-sm object-cover" />
+              <img src={localeFlags[locale]} alt="" className="w-5 h-4 rounded-sm object-cover" width={20} height={16} />
               <span>{localeNames[locale]}</span>
             </button>
           ))}

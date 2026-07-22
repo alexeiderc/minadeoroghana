@@ -39,8 +39,8 @@ export default function AboutPage() {
         <div className="absolute inset-0 dark-gradient" />
         <div className="absolute inset-0 hero-overlay" />
         <div className="absolute inset-0 opacity-20">
-          <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/10 rounded-full blur-3xl" />
-          <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-primary/5 rounded-full blur-3xl" />
+          <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/10 rounded-full blur-3xl hidden md:block" />
+          <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-primary/5 rounded-full blur-3xl hidden md:block" />
         </div>
         <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <motion.h1
@@ -78,7 +78,7 @@ export default function AboutPage() {
               <ScrollReveal key={i} delay={i * 0.15}>
                 <div className="group relative bg-white rounded-2xl border border-gold-100/50 hover:border-primary/40 transition-all duration-500 hover:shadow-xl hover:shadow-primary/5 text-center overflow-hidden">
                   <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                    <div className="absolute top-0 left-1/2 -translate-x-1/2 w-48 h-48 bg-primary/5 rounded-full blur-3xl" />
+                    <div className="absolute top-0 left-1/2 -translate-x-1/2 w-48 h-48 bg-primary/5 rounded-full blur-3xl hidden md:block" />
                   </div>
                   <div className="relative p-6">
                     <div className="w-14 h-14 rounded-2xl gold-gradient flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-primary/20">

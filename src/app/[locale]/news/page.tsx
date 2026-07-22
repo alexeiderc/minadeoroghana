@@ -80,7 +80,7 @@ export default function NewsPage() {
         <div className="absolute inset-0 dark-gradient" />
         <div className="absolute inset-0 hero-overlay" />
         <div className="absolute inset-0 opacity-20">
-          <div className="absolute top-1/3 left-1/2 -translate-x-1/2 w-96 h-96 bg-primary/10 rounded-full blur-3xl" />
+          <div className="absolute top-1/3 left-1/2 -translate-x-1/2 w-96 h-96 bg-primary/10 rounded-full blur-3xl hidden md:block" />
         </div>
 
         <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -120,7 +120,7 @@ export default function NewsPage() {
       {/* Tab Switcher */}
       <section className="bg-dark border-b border-white/5">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex gap-1">
+          <div className="flex gap-1 overflow-x-auto">
             <button
               onClick={() => setActiveTab("company")}
               className={`px-6 py-4 text-sm font-semibold transition-all duration-300 border-b-2 ${

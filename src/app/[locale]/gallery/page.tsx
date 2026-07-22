@@ -62,7 +62,7 @@ export default function GalleryPage() {
         <div className="absolute inset-0 dark-gradient" />
         <div className="absolute inset-0 hero-overlay" />
         <div className="absolute inset-0 opacity-20">
-          <div className="absolute bottom-1/3 right-1/3 w-96 h-96 bg-primary/10 rounded-full blur-3xl" />
+          <div className="absolute bottom-1/3 right-1/3 w-96 h-96 bg-primary/10 rounded-full blur-3xl hidden md:block" />
         </div>
 
         <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">

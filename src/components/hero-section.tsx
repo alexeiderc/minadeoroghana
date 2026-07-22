@@ -18,7 +18,7 @@ export default function HeroSection() {
   const textY = useTransform(scrollYProgress, [0, 0.4], [0, -60]);
 
   return (
-    <section ref={ref} className="relative h-screen min-h-[600px] flex items-center justify-center overflow-hidden">
+    <section ref={ref} className="relative min-h-[80vh] sm:min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background layers */}
       <motion.div
         style={{ y: bgY }}

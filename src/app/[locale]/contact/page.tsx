@@ -39,8 +39,8 @@ export default function ContactPage() {
         <div className="absolute inset-0 dark-gradient" />
         <div className="absolute inset-0 hero-overlay" />
         <div className="absolute inset-0 opacity-20">
-          <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/10 rounded-full blur-3xl" />
-          <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-primary/5 rounded-full blur-3xl" />
+          <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/10 rounded-full blur-3xl hidden md:block" />
+          <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-primary/5 rounded-full blur-3xl hidden md:block" />
         </div>
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -189,8 +189,8 @@ export default function ContactPage() {
             className="relative overflow-hidden rounded-3xl dark-gradient p-8 sm:p-12 lg:p-16 text-center"
           >
             <div className="absolute inset-0 opacity-20">
-              <div className="absolute top-0 right-0 w-96 h-96 bg-primary/10 rounded-full blur-3xl" />
-              <div className="absolute bottom-0 left-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl" />
+              <div className="absolute top-0 right-0 w-96 h-96 bg-primary/10 rounded-full blur-3xl hidden md:block" />
+              <div className="absolute bottom-0 left-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl hidden md:block" />
             </div>
             <div className="relative z-10">
               <h2 className="text-3xl sm:text-4xl font-bold font-[family-name:var(--font-heading)] mb-4">

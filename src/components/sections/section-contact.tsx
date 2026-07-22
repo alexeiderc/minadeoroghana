@@ -11,7 +11,7 @@ export default function SectionContact() {
   const inView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <section ref={ref} className="relative min-h-screen flex items-center bg-charcoal overflow-hidden">
+    <section ref={ref} className="relative min-h-[auto] lg:min-h-screen py-20 lg:py-0 flex items-center bg-charcoal overflow-hidden">
       {/* Background pattern */}
       <div className="absolute inset-0 opacity-[0.02]">
         <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
@@ -24,8 +24,8 @@ export default function SectionContact() {
         </svg>
       </div>
 
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 w-full">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-24 w-full">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
           {/* Text */}
           <motion.div
             initial={{ opacity: 0, x: -60 }}
@@ -35,7 +35,7 @@ export default function SectionContact() {
             <span className="text-xs font-bold tracking-[0.3em] uppercase text-primary mb-4 block">
               {t("tag")}
             </span>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold font-[family-name:var(--font-heading)] text-ivory leading-tight mb-6">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold font-[family-name:var(--font-heading)] text-ivory leading-tight mb-4 lg:mb-6">
               {t("title")}
             </h2>
             <div className="w-16 h-px bg-gradient-to-r from-primary to-transparent mb-6" />

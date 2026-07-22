@@ -1,10 +1,24 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 
+function useIsMobile(breakpoint = 768) {
+  const [isMobile, setIsMobile] = useState(false);
+  useEffect(() => {
+    const mq = window.matchMedia(`(min-width: ${breakpoint}px)`);
+    setIsMobile(!mq.matches);
+    const handler = (e: MediaQueryListEvent) => setIsMobile(!e.matches);
+    mq.addEventListener("change", handler);
+    return () => mq.removeEventListener("change", handler);
+  }, [breakpoint]);
+  return isMobile;
+}
+
 export default function DroneGuide() {
+  const isMobile = useIsMobile();
   const { scrollYProgress } = useScroll();
+  const [isVisible, setIsVisible] = useState(true);
 
   const x = useTransform(scrollYProgress, [0, 0.15, 0.3, 0.5, 0.7, 0.85, 1], ["5%", "25%", "70%", "50%", "80%", "30%", "5%"]);
   const y = useTransform(scrollYProgress, [0, 0.15, 0.3, 0.5, 0.7, 0.85, 1], ["15vh", "25vh", "40vh", "55vh", "65vh", "80vh", "15vh"]);
@@ -12,12 +26,17 @@ export default function DroneGuide() {
   const scale = useTransform(scrollYProgress, [0, 0.15, 0.5, 0.85, 1], [0.9, 1, 1.05, 1, 0.9]);
   const opacity = useTransform(scrollYProgress, [0, 0.02, 0.95, 1], [0, 1, 1, 0]);
 
+  useEffect(() => {
+    return opacity.on("change", (v) => setIsVisible(v > 0.01));
+  }, [opacity]);
+
   const propellerRef1 = useRef<SVGGElement>(null);
   const propellerRef2 = useRef<SVGGElement>(null);
   const propellerRef3 = useRef<SVGGElement>(null);
   const propellerRef4 = useRef<SVGGElement>(null);
 
   useEffect(() => {
+    if (isMobile || !isVisible) return;
     let animId: number;
     let angle = 0;
     function animate() {
@@ -34,12 +53,14 @@ export default function DroneGuide() {
     }
     animId = requestAnimationFrame(animate);
     return () => cancelAnimationFrame(animId);
-  }, []);
+  }, [isMobile, isVisible]);
+
+  if (isMobile) return null;
 
   return (
     <motion.div
       style={{ x, y, rotate, scale, opacity }}
-      className="fixed z-40 pointer-events-none"
+      className="fixed z-40 pointer-events-none will-change-transform"
       aria-hidden="true"
     >
       <svg
@@ -50,27 +71,18 @@ export default function DroneGuide() {
         xmlns="http://www.w3.org/2000/svg"
         className="drop-shadow-[0_4px_20px_rgba(200,162,74,0.3)]"
       >
-        {/* Body */}
         <rect x="40" y="22" width="40" height="14" rx="4" fill="#2D2D2D" stroke="#C8A24A" strokeWidth="1"/>
         <rect x="44" y="25" width="12" height="8" rx="2" fill="#181818" stroke="#C8A24A" strokeWidth="0.5"/>
-
-        {/* Camera lens */}
         <circle cx="50" cy="29" r="3" fill="#181818" stroke="#C8A24A" strokeWidth="0.5"/>
         <circle cx="50" cy="29" r="1.5" fill="#C8A24A" opacity="0.6"/>
-
-        {/* Arms */}
         <line x1="42" y1="26" x2="15" y2="20" stroke="#C8A24A" strokeWidth="1.5"/>
         <line x1="78" y1="26" x2="105" y2="20" stroke="#C8A24A" strokeWidth="1.5"/>
         <line x1="42" y1="32" x2="15" y2="38" stroke="#C8A24A" strokeWidth="1.5"/>
         <line x1="78" y1="32" x2="105" y2="38" stroke="#C8A24A" strokeWidth="1.5"/>
-
-        {/* Motor hubs */}
         <circle cx="15" cy="20" r="3" fill="#2D2D2D" stroke="#C8A24A" strokeWidth="1"/>
         <circle cx="105" cy="20" r="3" fill="#2D2D2D" stroke="#C8A24A" strokeWidth="1"/>
         <circle cx="15" cy="38" r="3" fill="#2D2D2D" stroke="#C8A24A" strokeWidth="1"/>
         <circle cx="105" cy="38" r="3" fill="#2D2D2D" stroke="#C8A24A" strokeWidth="1"/>
-
-        {/* Propellers */}
         <g ref={propellerRef1} style={{ transformOrigin: "15px 20px" }}>
           <ellipse cx="15" cy="20" rx="12" ry="1.5" fill="#C8A24A" opacity="0.5"/>
         </g>
@@ -83,16 +95,11 @@ export default function DroneGuide() {
         <g ref={propellerRef4} style={{ transformOrigin: "105px 38px" }}>
           <ellipse cx="105" cy="38" rx="12" ry="1.5" fill="#C8A24A" opacity="0.5"/>
         </g>
-
-        {/* Landing gear */}
         <line x1="44" y1="36" x2="38" y2="46" stroke="#8D8D8D" strokeWidth="1"/>
         <line x1="76" y1="36" x2="82" y2="46" stroke="#8D8D8D" strokeWidth="1"/>
         <line x1="36" y1="46" x2="42" y2="46" stroke="#8D8D8D" strokeWidth="1.5"/>
         <line x1="78" y1="46" x2="84" y2="46" stroke="#8D8D8D" strokeWidth="1.5"/>
-
-        {/* Scanning beam */}
         <path d="M50 36 L40 58 L60 58 Z" fill="url(#scanBeam)" opacity="0.3"/>
-
         <defs>
           <linearGradient id="scanBeam" x1="50" y1="36" x2="50" y2="58" gradientUnits="userSpaceOnUse">
             <stop offset="0%" stopColor="#C8A24A" stopOpacity="0.6"/>

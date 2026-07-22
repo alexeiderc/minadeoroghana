@@ -16,9 +16,9 @@ export default function SectionCorporate() {
   ];
 
   return (
-    <section ref={ref} className="relative min-h-screen flex items-center bg-graphite overflow-hidden">
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 w-full">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+    <section ref={ref} className="relative min-h-[auto] lg:min-h-screen py-20 lg:py-0 flex items-center bg-graphite overflow-hidden">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-24 w-full">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
           {/* Corporate visualization */}
           <motion.div
             initial={{ opacity: 0, y: 40 }}
@@ -94,7 +94,7 @@ export default function SectionCorporate() {
             <span className="text-xs font-bold tracking-[0.3em] uppercase text-primary mb-4 block">
               {t("tag")}
             </span>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold font-[family-name:var(--font-heading)] text-ivory leading-tight mb-6">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold font-[family-name:var(--font-heading)] text-ivory leading-tight mb-4 lg:mb-6">
               {t("title")}
             </h2>
             <div className="w-16 h-px bg-gradient-to-r from-primary to-transparent mb-6" />

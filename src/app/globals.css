@@ -54,6 +54,18 @@
     font-family: var(--font-heading);
     letter-spacing: 0.04em;
   }
+
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+    .gold-shimmer {
+      animation: none !important;
+      background-position: 0% center;
+    }
+  }
 }
 
 @layer utilities {
@@ -108,6 +120,7 @@
 
   .card-hover {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    will-change: transform;
   }
 
   .card-hover:hover {
@@ -122,11 +135,18 @@
   }
 
   .section-padding {
-    padding-top: 6rem;
-    padding-bottom: 6rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
   }
 
   @media (min-width: 768px) {
+    .section-padding {
+      padding-top: 6rem;
+      padding-bottom: 6rem;
+    }
+  }
+
+  @media (min-width: 1024px) {
     .section-padding {
       padding-top: 8rem;
       padding-bottom: 8rem;
@@ -139,13 +159,11 @@
       radial-gradient(circle at 80% 20%, rgba(200, 162, 74, 0.03) 0%, transparent 50%);
   }
 
-  /* Drone spotlight mask */
   .spotlight-mask {
     mask-image: radial-gradient(circle 200px at var(--spot-x, 50%) var(--spot-y, 50%), black 40%, transparent 100%);
     -webkit-mask-image: radial-gradient(circle 200px at var(--spot-x, 50%) var(--spot-y, 50%), black 40%, transparent 100%);
   }
 
-  /* Orphan row centering for grids */
   @media (max-width: 767px) {
     .orphan-center > :nth-child(5):last-child {
       justify-self: center;

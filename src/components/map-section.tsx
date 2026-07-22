@@ -52,7 +52,11 @@ export default function MapSection({
 
   useEffect(() => {
     setMounted(true);
-    setIsMobile(window.innerWidth < 640);
+    const mq = window.matchMedia("(min-width: 640px)");
+    setIsMobile(!mq.matches);
+    const handler = (e: MediaQueryListEvent) => setIsMobile(!e.matches);
+    mq.addEventListener("change", handler);
+    return () => mq.removeEventListener("change", handler);
   }, []);
 
   const mapHeight = mounted && isMobile ? "50vh" : height;

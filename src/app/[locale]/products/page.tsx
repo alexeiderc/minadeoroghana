@@ -41,7 +41,7 @@ export default function ProductsPage() {
         <div className="absolute inset-0 dark-gradient" />
         <div className="absolute inset-0 hero-overlay" />
         <div className="absolute inset-0 opacity-20">
-          <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-primary/10 rounded-full blur-3xl" />
+          <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-primary/10 rounded-full blur-3xl hidden md:block" />
         </div>
 
         <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -105,8 +105,8 @@ export default function ProductsPage() {
                     {t(product.descriptionKey)}
                   </p>
 
-                  <div className="border-t border-gold-100/50 pt-4">
-                    <table className="w-full text-sm">
+                  <div className="border-t border-gold-100/50 pt-4 overflow-x-auto">
+                    <table className="w-full text-sm table-fixed">
                       <tbody>
                         {product.specs.map((spec) => (
                           <tr key={spec.labelKey} className="border-b border-gold-50 last:border-0">

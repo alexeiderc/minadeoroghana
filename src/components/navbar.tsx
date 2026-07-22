@@ -50,8 +50,8 @@ export default function Navbar() {
         className={clsx(
           "fixed top-0 left-0 right-0 z-50 h-[80px] transition-all duration-500",
           scrolled
-            ? "bg-charcoal/95 backdrop-blur-xl shadow-2xl shadow-black/40 border-b border-primary/10"
-            : "bg-charcoal/40 backdrop-blur-sm"
+            ? "bg-charcoal/95 md:backdrop-blur-xl shadow-2xl shadow-black/40 border-b border-primary/10"
+            : "bg-charcoal/50 md:backdrop-blur-sm"
         )}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full">

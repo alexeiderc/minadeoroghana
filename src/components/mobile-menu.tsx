@@ -30,7 +30,7 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
     <>
       {isOpen && (
         <div
-          className="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 xl:hidden"
+          className="fixed inset-0 bg-black/60 z-50 xl:hidden"
           onClick={onClose}
         />
       )}
