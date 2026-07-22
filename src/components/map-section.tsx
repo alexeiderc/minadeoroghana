@@ -33,12 +33,16 @@ interface MapSectionProps {
   markers?: MapMarker[];
   center?: [number, number];
   zoom?: number;
+  scrollWheelZoom?: boolean;
+  height?: string;
 }
 
 export default function MapSection({
   markers = [],
   center = [7.9465, -1.0232],
   zoom = 7,
+  scrollWheelZoom = false,
+  height = "500px",
 }: MapSectionProps) {
   const [mounted, setMounted] = useState(false);
 
@@ -48,18 +52,19 @@ export default function MapSection({
 
   if (!mounted) {
     return (
-      <div className="w-full h-[500px] bg-slate-custom/5 rounded-2xl flex items-center justify-center">
+      <div className="w-full bg-slate-custom/5 rounded-2xl flex items-center justify-center" style={{ height }}>
         <div className="w-8 h-8 border-2 border-primary/30 border-t-primary rounded-full animate-spin" />
       </div>
     );
   }
 
   return (
-    <div className="w-full h-[500px] rounded-2xl overflow-hidden border border-gold-100/30">
+    <div className="w-full rounded-2xl overflow-hidden border border-gold-100/30" style={{ height }}>
       <MapContainer
         center={center}
         zoom={zoom}
-        scrollWheelZoom={false}
+        scrollWheelZoom={scrollWheelZoom}
+        zoomControl={true}
         style={{ height: "100%", width: "100%" }}
       >
         <TileLayer

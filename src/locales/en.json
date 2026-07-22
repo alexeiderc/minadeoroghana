@@ -221,6 +221,28 @@
       "corporate": "Corporate",
       "sustainability": "Sustainability",
       "financial": "Financial"
+    },
+    "heroBadge": "Latest News",
+    "heroSubtitle": "Stay informed with the latest developments from MC QUEST and the Ghana mining industry.",
+    "latestTitle": "Our Latest News",
+    "latestSubtitle": "Company updates, operational milestones, and corporate announcements.",
+    "noResults": "No articles found in this category.",
+    "tabCompany": "Company News",
+    "tabIndustry": "Industry News",
+    "industryTitle": "Ghana Mining Industry News",
+    "industrySubtitle": "Latest news from the Ghana Gold Board (GoldBod) — the sole authority for gold trading and regulation in Ghana.",
+    "lastUpdate": "Last updated",
+    "cached": "Cached",
+    "refresh": "Refresh",
+    "loading": "Loading latest news...",
+    "noIndustryNews": "No industry news available at this time.",
+    "viewAllGoldBod": "View All on GoldBod",
+    "filter": {
+      "all": "All",
+      "operations": "Operations",
+      "corporate": "Corporate",
+      "sustainability": "Sustainability",
+      "financial": "Financial"
     }
   },
   "gallery": {
@@ -256,8 +278,8 @@
     "info": {
       "headquarters": "Operations Office",
       "address": "DTD GT-344-7879 14 TEMA WEST ACCRA GHANA",
-      "phone": "+233 (0) 257-055-1514",
-      "email": "info@mcquestgoldmining.com",
+      "phone": "+233 (0) 57-055-1514",
+      "email": "info@mcquest.gold",
       "whatsapp": "+233 (0) 570-551-514",
       "hours": "Mon — Fri: 8:00 AM — 5:00 PM (GMT)",
       "registration": "Company Registration",

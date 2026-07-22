@@ -68,10 +68,23 @@ export default function AssetsPage() {
         </div>
       </section>
 
-      {/* Map Section */}
-      <section className="section-padding bg-white">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <MapSection markers={markers} />
+      {/* Full Interactive Map */}
+      <section className="bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-12">
+          <div className="text-center mb-8">
+            <h2 className="text-2xl sm:text-3xl font-bold text-slate-custom font-[family-name:var(--font-heading)]">
+              <MapPin className="w-6 h-6 text-primary inline-block mr-2 -mt-1" />
+              {t("title")}
+            </h2>
+            <p className="text-slate-custom/60 mt-2">{t("subtitle")}</p>
+          </div>
+          <MapSection
+            markers={markers}
+            center={[6.1, -0.85]}
+            zoom={11}
+            scrollWheelZoom={true}
+            height="65vh"
+          />
         </div>
       </section>
 

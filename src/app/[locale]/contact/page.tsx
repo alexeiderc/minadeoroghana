@@ -25,9 +25,9 @@ export default function ContactPage() {
 
   const contactCards = [
     { icon: MapPin, label: t("info.headquarters"), value: "DTD GT-344-7879 14 TEMA WEST ACCRA GHANA", href: null },
-    { icon: Phone, label: t("info.phone"), value: "+233 (0) 257-055-1514", href: "tel:+2332570551514" },
+    { icon: Phone, label: t("info.phone"), value: "+233 (0) 57-055-1514", href: "tel:+2332570551514" },
     { icon: MessageCircle, label: t("info.whatsapp"), value: "+233 (0) 570-551-514", href: "https://wa.me/233570551514" },
-    { icon: Mail, label: t("info.email"), value: "info@mcquestgoldmining.com", href: "mailto:info@mcquestgoldmining.com" },
+    { icon: Mail, label: t("info.email"), value: "info@mcquest.gold", href: "mailto:info@mcquest.gold" },
     { icon: Clock, label: t("info.hours"), value: "Mon — Fri: 8:00 AM — 5:00 PM (GMT)", href: null },
     { icon: FileText, label: t("info.registration"), value: t("info.registrationValue"), href: null },
   ];

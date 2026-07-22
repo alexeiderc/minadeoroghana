@@ -221,6 +221,28 @@
       "corporate": "องค์กร",
       "sustainability": "ความยั่งยืน",
       "financial": "การเงิน"
+    },
+    "heroBadge": "ข่าวสารล่าสุด",
+    "heroSubtitle": "ติดตามข่าวสารล่าสุดจาก MC QUEST และอุตสาหกรรมเหมืองแร่กานา",
+    "latestTitle": "ข่าวสารล่าสุดของเรา",
+    "latestSubtitle": "อัปเดตบริษัท เกียรติยศการดำเนินงาน และประกาศองค์กร",
+    "noResults": "ไม่พบบทความในหมวดหมู่นี้",
+    "tabCompany": "ข่าวบริษัท",
+    "tabIndustry": "ข่าวอุตสาหกรรม",
+    "industryTitle": "ข่าวอุตสาหกรรมเหมืองแร่กานา",
+    "industrySubtitle": "ข่าวสารล่าสุดจาก Ghana Gold Board (GoldBod) — หน่วยงานแต่เพียงผู้เดียวสำหรับการซื้อขายทองคำและกฎระเบียบในกานา",
+    "lastUpdate": "อัปเดตล่าสุด",
+    "cached": "แคชแล้ว",
+    "refresh": "รีเฟรช",
+    "loading": "กำลังโหลดข่าว...",
+    "noIndustryNews": "ไม่มีข่าวอุตสาหกรรมในขณะนี้",
+    "viewAllGoldBod": "ดูทั้งหมดบน GoldBod",
+    "filter": {
+      "all": "ทั้งหมด",
+      "operations": "การดำเนินงาน",
+      "corporate": "องค์กร",
+      "sustainability": "ความยั่งยืน",
+      "financial": "การเงิน"
     }
   },
   "gallery": {
@@ -256,8 +278,8 @@
     "info": {
       "headquarters": "สำนักงานการดำเนินงาน",
       "address": "DTD GT-344-7879 14 TEMA WEST ACCRA GHANA",
-      "phone": "+233 (0) 257-055-1514",
-      "email": "info@mcquestgoldmining.com",
+      "phone": "+233 (0) 57-055-1514",
+      "email": "info@mcquest.gold",
       "whatsapp": "+233 (0) 570-551-514",
       "hours": "จันทร์ — ศุกร์: 8:00 — 17:00 (GMT)",
       "registration": "การจดทะเบียนบริษัท",

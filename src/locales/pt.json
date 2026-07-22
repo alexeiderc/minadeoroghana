@@ -221,6 +221,28 @@
       "corporate": "Corporativo",
       "sustainability": "Sustentabilidade",
       "financial": "Financeiro"
+    },
+    "heroBadge": "Últimas Notícias",
+    "heroSubtitle": "Mantenha-se informado com os últimos desenvolvimentos da MC QUEST e da indústria mineradora de Gana.",
+    "latestTitle": "As Nossas Últimas Notícias",
+    "latestSubtitle": "Atualizações da empresa, marcos operativos e anúncios corporativos.",
+    "noResults": "Nenhum artigo encontrado nesta categoria.",
+    "tabCompany": "Notícias da Empresa",
+    "tabIndustry": "Notícias do Setor",
+    "industryTitle": "Notícias da Indústria Mineradora de Gana",
+    "industrySubtitle": "Últimas notícias do Ghana Gold Board (GoldBod) — a autoridade exclusiva do comércio e regulação do ouro em Gana.",
+    "lastUpdate": "Última atualização",
+    "cached": "Em cache",
+    "refresh": "Atualizar",
+    "loading": "A carregar notícias...",
+    "noIndustryNews": "Não há notícias do setor disponíveis neste momento.",
+    "viewAllGoldBod": "Ver tudo no GoldBod",
+    "filter": {
+      "all": "Todos",
+      "operations": "Operações",
+      "corporate": "Corporativo",
+      "sustainability": "Sustentabilidade",
+      "financial": "Financeiro"
     }
   },
   "gallery": {
@@ -256,8 +278,8 @@
     "info": {
       "headquarters": "Escritório de Operações",
       "address": "DTD GT-344-7879 14 TEMA WEST ACCRA GHANA",
-      "phone": "+233 (0) 257-055-1514",
-      "email": "info@mcquestgoldmining.com",
+      "phone": "+233 (0) 57-055-1514",
+      "email": "info@mcquest.gold",
       "whatsapp": "+233 (0) 570-551-514",
       "hours": "Seg — Sex: 8:00 — 17:00 (GMT)",
       "registration": "Registro da Empresa",

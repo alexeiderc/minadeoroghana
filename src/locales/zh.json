@@ -221,6 +221,28 @@
       "corporate": "公司",
       "sustainability": "可持續發展",
       "financial": "財務"
+    },
+    "heroBadge": "最新消息",
+    "heroSubtitle": "隨時了解 MC QUEST 和迦納礦業的最新動態。",
+    "latestTitle": "最新消息",
+    "latestSubtitle": "公司更新、營運里程碑和公司公告。",
+    "noResults": "此類別中未找到文章。",
+    "tabCompany": "公司新聞",
+    "tabIndustry": "行業新聞",
+    "industryTitle": "迦納礦業新聞",
+    "industrySubtitle": "來自迦納黃金委員會 (GoldBod) 的最新消息 — 迦納黃金交易和監管的唯一權威機構。",
+    "lastUpdate": "最後更新",
+    "cached": "已緩存",
+    "refresh": "刷新",
+    "loading": "正在載入新聞...",
+    "noIndustryNews": "目前沒有可用的行業新聞。",
+    "viewAllGoldBod": "在 GoldBod 查看全部",
+    "filter": {
+      "all": "全部",
+      "operations": "營運",
+      "corporate": "公司",
+      "sustainability": "可持續發展",
+      "financial": "財務"
     }
   },
   "gallery": {
@@ -256,8 +278,8 @@
     "info": {
       "headquarters": "營運辦公室",
       "address": "DTD GT-344-7879 14 TEMA WEST ACCRA GHANA",
-      "phone": "+233 (0) 257-055-1514",
-      "email": "info@mcquestgoldmining.com",
+      "phone": "+233 (0) 57-055-1514",
+      "email": "info@mcquest.gold",
       "whatsapp": "+233 (0) 570-551-514",
       "hours": "週一至週五：上午8:00 — 下午5:00 (GMT)",
       "registration": "公司註冊",
