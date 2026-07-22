@@ -60,7 +60,7 @@ export default function LanguageSwitcher() {
                   : "text-white/70 hover:text-white hover:bg-white/5"
               )}
             >
-              <span className="text-lg">{localeFlags[locale]}</span>
+              <img src={localeFlags[locale]} alt="" className="w-5 h-4 rounded-sm object-cover" />
               <span>{localeNames[locale]}</span>
             </button>
           ))}

@@ -11,9 +11,9 @@ export const localeNames: Record<Locale, string> = {
 };
 
 export const localeFlags: Record<Locale, string> = {
-  en: "🇬🇧",
-  es: "🇪🇸",
-  pt: "🇵🇹",
-  zh: "🇹🇼",
-  th: "🇹🇭",
+  en: "/flags/en.svg",
+  es: "/flags/es.svg",
+  pt: "/flags/pt.svg",
+  zh: "/flags/zh.svg",
+  th: "/flags/th.svg",
 };

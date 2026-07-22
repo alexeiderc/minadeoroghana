@@ -81,7 +81,7 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
                 }}
                 className="flex items-center gap-2 px-4 py-2.5 rounded-lg text-sm text-white/70 hover:text-white hover:bg-white/5 transition-colors"
               >
-                <span className="text-base">{localeFlags[locale]}</span>
+                <img src={localeFlags[locale]} alt="" className="w-5 h-4 rounded-sm object-cover" />
                 <span>{localeNames[locale]}</span>
               </button>
             ))}

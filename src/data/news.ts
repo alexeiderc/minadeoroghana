@@ -7,7 +7,7 @@ export const newsArticles: NewsArticle[] = [
     titleKey: "article1.title",
     excerptKey: "article1.excerpt",
     date: "2024-11-15",
-    category: "production",
+    category: "operations",
     imageGradient: "from-amber-900 to-yellow-800",
   },
   {
@@ -25,7 +25,7 @@ export const newsArticles: NewsArticle[] = [
     titleKey: "article3.title",
     excerptKey: "article3.excerpt",
     date: "2024-08-22",
-    category: "exploration",
+    category: "operations",
     imageGradient: "from-yellow-900 to-amber-700",
   },
   {
@@ -34,7 +34,7 @@ export const newsArticles: NewsArticle[] = [
     titleKey: "article4.title",
     excerptKey: "article4.excerpt",
     date: "2024-06-10",
-    category: "community",
+    category: "corporate",
     imageGradient: "from-orange-900 to-amber-600",
   },
   {
@@ -43,7 +43,7 @@ export const newsArticles: NewsArticle[] = [
     titleKey: "article5.title",
     excerptKey: "article5.excerpt",
     date: "2025-01-05",
-    category: "market",
+    category: "financial",
     imageGradient: "from-amber-800 to-yellow-600",
   },
   {
