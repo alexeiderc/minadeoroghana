@@ -114,7 +114,7 @@ export default function SectionGold() {
                   animate={inView ? { opacity: 0.6 } : {}}
                   transition={{ delay: 1.2 }}
                 >
-                  MC QUEST
+                  Mc Quest
                 </motion.text>
                 <motion.text
                   x="225" y="172" textAnchor="middle" fill="#181818" fontSize="9" fontFamily="var(--font-body)"

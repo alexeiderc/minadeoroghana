@@ -165,7 +165,7 @@ export default function AboutPage() {
               markers={[
                 {
                   id: "mine",
-                  name: "MC QUEST Eastern Region",
+                  name: "Mc Quest Eastern Region",
                   type: "mine",
                   lat: 6.05,
                   lng: -0.85,

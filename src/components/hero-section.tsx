@@ -70,7 +70,7 @@ export default function HeroSection() {
           transition={{ duration: 1, delay: 0.4, ease: [0.22, 1, 0.36, 1] }}
           className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold font-[family-name:var(--font-heading)] leading-[1.15] mb-6 tracking-wide"
         >
-          <span className="gold-shimmer">MC QUEST</span>
+          <span className="gold-shimmer">Mc Quest</span>
           <br />
           <span className="text-ivory/90 text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-medium tracking-[0.15em]">
             GOLD & DIAMOND MINING

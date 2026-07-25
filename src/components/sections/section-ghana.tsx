@@ -118,7 +118,7 @@ export default function SectionGhana() {
                   animate={inView ? { opacity: 1 } : {}}
                   transition={{ delay: 2.2 }}
                 >
-                  MC QUEST Concessions
+                  Mc Quest Concessions
                 </motion.text>
               </svg>
             </div>

@@ -67,7 +67,7 @@ export default function InvestorsPage() {
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-white/10 bg-white/5 backdrop-blur-sm mb-6">
               <TrendingUp className="w-4 h-4 text-primary" />
               <span className="text-sm text-white/70 font-medium">
-                MC QUEST GOLD & DIAMOND
+                Mc Quest GOLD & DIAMOND
               </span>
             </div>
           </motion.div>

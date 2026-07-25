@@ -10,7 +10,7 @@ import MapSection from "@/components/map-section";
 const officeMarker = [
   {
     id: "hq",
-    name: "MC QUEST GOLD & DIAMOND MINING INDUSTRY LTD",
+    name: "Mc Quest GOLD & DIAMOND MINING INDUSTRY LTD",
     type: "Headquarters",
     lat: 5.6698,
     lng: -0.0166,
