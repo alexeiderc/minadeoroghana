@@ -5,6 +5,7 @@ import { locales } from "@/i18n/config";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
 import SmoothScroll from "@/components/smooth-scroll";
+import WhatsAppButton from "@/components/whatsapp-button";
 
 type Props = {
   children: React.ReactNode;
@@ -37,6 +38,7 @@ export default async function LocaleLayout({ children, params }: Props) {
     <NextIntlClientProvider messages={messages} locale={locale}>
       <SmoothScroll>
         <Navbar />
+        <WhatsAppButton />
         <main>{children}</main>
         <Footer />
       </SmoothScroll>
