@@ -1,11 +1,14 @@
 backend:
-  name: test-repo
+  name: git-gateway
+  branch: main
   commit_messages:
     create: "cms: create {{collection}} \"{{slug}}\""
     update: "cms: update {{collection}} \"{{slug}}\""
     delete: "cms: delete {{collection}} \"{{slug}}\""
     uploadMedia: "[skip ci] cms: upload \"{{path}}\""
     deleteMedia: "[skip ci] cms: delete \"{{path}}\""
+
+local_backend: true
 
 logo_url: "/logo.png"
 
