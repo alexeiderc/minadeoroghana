@@ -41,7 +41,7 @@
       "operations": "Operações Iniciadas",
       "operationsDesc": "Lançamento de operações de mineração de superfície de ouro e diamantes utilizando métodos de recuperação sem mercúrio e cianeto.",
       "resource": "Estimativa de Recursos",
-      "resourceDesc": "Conclusão da estimativa de recursos minerais pela Mining Plus utilizando tecnologia LiDAR 33, perfuração de diamante (DDH), circulação reversa (RC) e perfuração rotativa a ar.",
+      "resourceDesc": "Conclusão da estimativa de recursos minerais pela Mining Plus utilizando tecnologia LiDAR 3D, perfuração de diamante (DDH), circulação reversa (RC) e perfuração rotativa a ar.",
       "production": "Marco de Produção",
       "productionDesc": "Alcance de teor médio de 10 g/t de ouro em áreas de depósitos de alto teor, estabelecendo a operação como um produtor significativo.",
       "expansion": "Planos de Expansão",
@@ -170,8 +170,12 @@
     "fact8": "Gana é o maior produtor de ouro da África com reservas ilimitadas"
   },
   "products": {
+    "heroBadge": "Produtos",
     "title": "Produtos de Ouro e Diamantes",
+    "heroSubtitle": "Ouro e diamantes de qualidade premium produzidos através do nosso processo de recuperação sem mercúrio e cianeto.",
     "subtitle": "Ouro e diamantes de qualidade premium produzidos através do nosso processo de recuperação sem mercúrio e cianeto.",
+    "gridTitle": "Nossa Gama de Produtos",
+    "gridSubtitle": "Produtos mineração de ouro abrangentes desde a exploração até as barras dore negociadas internacionalmente.",
     "dore": "Barras de Ouro Puro Doré",
     "doreDesc": "Barras de ouro de alta pureza produzidas em nossa instalação de fundição no local utilizando nosso processo patenteado de recuperação sem mercúrio.",
     "concentrate": "Concentrado de Ouro",
@@ -183,6 +187,28 @@
     "trading": "Comércio Internacional",
     "tradingDesc": "Relações comerciais estabelecidas com refinarias internacionais em Londres, Zurique, Dubai e Singapura.",
     "specifications": "Especificações",
+    "recoveryRate": "Taxa de Recuperação",
+    "cutOff": "Teor de Corte",
+    "grade": "Teor Médio",
+    "processing": "Processamento",
+    "logistics": "Logística",
+    "compliance": "Conformidade",
+    "process": "Processo",
+    "markets": "Mercados",
+    "purityTitle": "Pureza e Certificação",
+    "puritySubtitle": "Nosso processo sem mercúrio produz ouro de pureza excepcional com certificações reconhecidas internacionalmente.",
+    "purityCertTitle": "Relatórios de Ensaio Certificados",
+    "purityCertDesc": "Cada remessa é acompanhada de relatórios de ensaio certificados independentes que verificam a pureza e o peso do ouro segundo padrões internacionais.",
+    "purityAssayTitle": "Taxa de Recuperação de 90%",
+    "purityAssayDesc": "Nosso avançado processo de recuperação sem mercúrio e cianeto alcança uma taxa de recuperação de ouro de 90% com um teor de corte de 0,1 g/t.",
+    "purityGlobalTitle": "Padrões Internacionais",
+    "purityGlobalDesc": "O ouro produzido atende aos padrões de boa entrega do LBMA, aceito por refinarias e bancos em todo o mundo.",
+    "tradingTitle": "Parceiros Comerciais Internacionais",
+    "tradingSubtitle": "Parcerias estratégicas com refinarias e casas de comércio internacionais líderes.",
+    "ctaTitle": "Pronto para Associar-se?",
+    "ctaSubtitle": "Seja investidor, comprador ou parceiro técnico, estamos abertos ao diálogo.",
+    "ctaContact": "Contacte-nos",
+    "ctaInvestors": "Relações com Investidores",
     "environmental": "Vantagem Ambiental",
     "environmentalDesc": "Nosso processo patenteado produz ouro puro sem produtos químicos tóxicos — atraente de forma única para compradores conscientes do meio ambiente."
   },
@@ -246,12 +272,31 @@
     }
   },
   "gallery": {
+    "heroBadge": "Galeria",
     "title": "Galeria de Operações",
+    "heroSubtitle": "Uma jornada visual pelas nossas operações de mineração, tecnologia LiDAR e comunidades que servimos.",
     "subtitle": "Uma jornada visual pelas nossas operações de mineração, tecnologia LiDAR e comunidades que servimos.",
+    "browseTitle": "Explore Nossas Operações",
+    "browseSubtitle": "Filtre por categoria para explorar diferentes aspectos das nossas operações de mineração.",
+    "filter": {
+      "all": "Todos",
+      "mining": "Operações de Mineração",
+      "processing": "Instalações de Processamento",
+      "community": "Comunidade",
+      "landscape": "Paisagem"
+    },
     "mining": "Operações de Mineração",
     "processing": "Instalações de Processamento",
     "community": "Comunidade",
-    "landscape": "Paisagem"
+    "landscape": "Paisagem",
+    "pitOperations": "Operações a Céu Aberto",
+    "processingPlant": "Planta de Processamento",
+    "goldBars": "Barras de Ouro Doré",
+    "explorationCamp": "Acampamento de Exploração",
+    "aerialView": "Vista Aérea do Levantamento",
+    "teamOperations": "Operações da Equipa",
+    "heavyEquipment": "Equipamento Pesado",
+    "refinedGold": "Ouro Refinado"
   },
   "contact": {
     "title": "Fale Connosco",
@@ -279,6 +324,7 @@
       "headquarters": "Escritório de Operações",
       "address": "DTD GT-344-7879 14 TEMA WEST ACCRA GHANA",
       "phone": "+233 (0) 57-055-1514",
+      "emailLabel": "E-mail",
       "email": "info@mcquest.gold",
       "whatsapp": "+233 (0) 570-551-514",
       "hours": "Seg — Sex: 8:00 — 17:00 (GMT)",
@@ -326,9 +372,97 @@
     "registration": "Ref No: CS007250125 | TIN: C0065010639 | Sector: GOLD & DIAMOND Miner"
   },
   "legal": {
+    "backToHome": "Voltar ao Início",
     "privacyTitle": "Política de Privacidade",
     "termsTitle": "Termos de Serviço",
-    "lastUpdated": "Última atualização"
+    "lastUpdated": "Última atualização",
+    "privacyQuestions": "Perguntas sobre Privacidade?",
+    "privacyQuestionsDesc": "Se tiver alguma dúvida sobre esta Política de Privacidade, entre em contato connosco.",
+    "termsQuestions": "Perguntas sobre os Termos?",
+    "termsQuestionsDesc": "Se tiver alguma dúvida sobre estes Termos de Serviço, entre em contato connosco.",
+    "privacy": {
+      "collection": {
+        "title": "Informações que Recolhemos",
+        "p1": "Recolhemos informações que nos fornece diretamente, como quando preenche um formulário de contacto, subscreve o nosso boletim ou comunica connosco. Isto pode incluir o seu nome, endereço de e-mail, nome da empresa e número de telefone.",
+        "p2": "Também recolhemos certas informações automaticamente quando visita o nosso website, incluindo o seu endereço IP, tipo de navegador, sistema operativo, URLs de referência e páginas visitadas.",
+        "p3": "Não recolhemos informações pessoais sensíveis como dados financeiros, informações de saúde ou identificadores governamentais através deste website."
+      },
+      "usage": {
+        "title": "Como Utilizamos as Suas Informações",
+        "p1": "Utilizamos as informações recolhidas para responder às suas consultas, fornecer serviços solicitados, enviar atualizações do boletim e melhorar o nosso website e operações.",
+        "p2": "Também podemos utilizar as suas informações para cumprir obrigações legais, fazer cumprir os nossos termos e proteger os direitos e a segurança da Mc Quest e dos nossos parceiros.",
+        "p3": "Não vendemos, trocamos nem alugamos as suas informações pessoais a terceiros."
+      },
+      "cookies": {
+        "title": "Cookies e Rastreamento",
+        "p1": "O nosso website utiliza cookies essenciais para garantir o funcionamento adequado. Estes cookies não recolhem informações pessoais.",
+        "p2": "Podemos utilizar ferramentas de análise para compreender como os visitantes interagem com o nosso website. Estes dados são agregados e não identificam utilizadores individuais.",
+        "p3": "Pode controlar as definições de cookies através das preferências do seu navegador."
+      },
+      "thirdParties": {
+        "title": "Serviços de Terceiros",
+        "p1": "Podemos utilizar serviços de terceiros como fornecedores de análise e serviços de alojamento. Estes fornecedores têm acesso a informações apenas na medida necessária para desempenhar as suas funções e são obrigados a proteger os seus dados.",
+        "p2": "Não partilhamos as suas informações pessoais com terceiros para fins de marketing."
+      },
+      "security": {
+        "title": "Segurança de Dados",
+        "p1": "Implementamos medidas técnicas e organizacionais apropriadas para proteger as suas informações pessoais contra acesso não autorizado, alteração, divulgação ou destruição.",
+        "p2": "Embora nos esforcemos por proteger os seus dados, nenhum método de transmissão pela Internet é 100% seguro. Não podemos garantir segurança absoluta."
+      },
+      "rights": {
+        "title": "Os Seus Direitos",
+        "p1": "Tem o direito de aceder, corrigir ou eliminar as suas informações pessoais. Também pode optar por não receber comunicações nossas a qualquer momento.",
+        "p2": "Para exercer estes direitos, entre em contato connosco através das informações fornecidas abaixo."
+      },
+      "contactPolicy": {
+        "title": "Contacte-nos sobre Privacidade",
+        "p1": "Se tiver alguma questão ou preocupação sobre esta Política de Privacidade, contacte a nossa equipa de Proteção de Dados.",
+        "p2": "Responderemos à sua consulta dentro de 30 dias úteis."
+      },
+      "changes": {
+        "title": "Alterações a Esta Política",
+        "p1": "Podemos atualizar esta Política de Privacidade de vez em quando. As alterações serão publicadas nesta página com uma data de revisão atualizada.",
+        "p2": "Recomendamos que rever periodicamente esta política para quaisquer alterações."
+      }
+    },
+    "terms": {
+      "acceptance": {
+        "title": "Aceitação dos Termos",
+        "p1": "Ao aceder e utilizar o website da Mc Quest GOLD & DIAMOND MINING INDUSTRY LTD, aceita e concorda em ficar sujeito a estes Termos de Serviço.",
+        "p2": "Se não concordar com estes termos, por favor não utilize este website."
+      },
+      "use": {
+        "title": "Utilização do Website",
+        "p1": "Este website é fornecido para fins informativos sobre a Mc Quest GOLD & DIAMOND MINING INDUSTRY LTD e as suas operações de mineração. Pode utilizar este website em conformidade com as leis e regulamentos aplicáveis.",
+        "p2": "Concorda em não utilizar mal o website, tentar obter acesso não autorizado ou interferir com o seu funcionamento adequado.",
+        "p3": "O conteúdo deste website destina-se apenas a informação geral e não constitui aconselhamento de investimento, aconselhamento financeiro ou uma solicitação de investimento."
+      },
+      "ip": {
+        "title": "Propriedade Intelectual",
+        "p1": "Todo o conteúdo deste website, incluindo texto, gráficos, logótipos, imagens e software, é propriedade da Mc Quest GOLD & DIAMOND MINING INDUSTRY LTD e é protegido por leis de propriedade intelectual e direitos de autor.",
+        "p2": "Não pode reproduzir, distribuir ou criar trabalhos derivados de qualquer conteúdo sem consentimento prévio por escrito."
+      },
+      "disclaimer": {
+        "title": "Isenção de Responsabilidade",
+        "p1": "Este website e o seu conteúdo são fornecidos \u0022como estão\u0022 sem garantias de qualquer tipo. A Mc Quest não faz representações sobre a exatidão, completude ou fiabilidade da informação apresentada.",
+        "p2": "As declarações adiantadas neste website envolvem riscos e incertezas. Os resultados reais podem diferir materialmente dos antecipados."
+      },
+      "liability": {
+        "title": "Limitação de Responsabilidade",
+        "p1": "A Mc Quest GOLD & DIAMOND MINING INDUSTRY LTD não será responsável por quaisquer danos diretos, indiretos, incidentais ou consequenciais decorrentes da utilização deste website.",
+        "p2": "Esta limitação aplica-se independentemente da teoria jurídica, seja baseada em contrato, delito, negligência ou qualquer outra base."
+      },
+      "governingLaw": {
+        "title": "Lei Aplicável",
+        "p1": "Estes Termos de Serviço são regidos e interpretados de acordo com as leis da República de Gana.",
+        "p2": "Quaisquer disputas decorrentes destes termos estarão sujeitas à jurisdição exclusiva dos tribunais de Gana."
+      },
+      "contactTerms": {
+        "title": "Contacte-nos sobre Termos",
+        "p1": "Se tiver alguma questão sobre estes Termos de Serviço, contacte a nossa equipa jurídica.",
+        "p2": "Responderemos à sua consulta dentro de 30 dias úteis."
+      }
+    }
   },
   "home": {
     "sections": {

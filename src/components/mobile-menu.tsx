@@ -1,7 +1,7 @@
 "use client";
 
-import { useTranslations } from "next-intl";
-import { Link } from "@/i18n/navigation";
+import { useTranslations, useLocale } from "next-intl";
+import { Link, useRouter, usePathname } from "@/i18n/navigation";
 import { locales, localeNames, localeFlags, type Locale } from "@/i18n/config";
 import { X, ChevronRight } from "lucide-react";
 import clsx from "clsx";
@@ -25,6 +25,9 @@ const navItems = [
 
 export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
   const t = useTranslations();
+  const router = useRouter();
+  const pathname = usePathname();
+  const currentLocale = useLocale();
 
   return (
     <>
@@ -70,16 +73,21 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
 
         <div className="px-6 py-6 border-t border-white/10">
           <p className="text-xs text-white/40 uppercase tracking-wider mb-3 px-4">
-            {t("nav.home") ? "Language" : "Language"}
+            Language
           </p>
           <div className="grid grid-cols-2 gap-2 orphan-center">
             {locales.map((locale) => (
               <button
                 key={locale}
                 onClick={() => {
+                  router.replace(pathname, { locale });
                   onClose();
                 }}
-                className="flex items-center gap-2 px-4 py-2.5 rounded-lg text-sm text-white/70 hover:text-white hover:bg-white/5 transition-colors"
+                className={`flex items-center gap-2 px-4 py-2.5 rounded-lg text-sm transition-colors ${
+                  locale === currentLocale
+                    ? "text-primary bg-white/5"
+                    : "text-white/70 hover:text-white hover:bg-white/5"
+                }`}
               >
                 <img src={localeFlags[locale]} alt="" className="w-5 h-4 rounded-sm object-cover" />
                 <span>{localeNames[locale]}</span>

@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useRef, useEffect } from "react";
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
 import { useRouter, usePathname } from "@/i18n/navigation";
 import { locales, localeNames, localeFlags, type Locale } from "@/i18n/config";
 import { Globe, ChevronDown } from "lucide-react";
@@ -14,7 +14,7 @@ export default function LanguageSwitcher() {
   const [isOpen, setIsOpen] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
 
-  const currentLocale = t("nav.home") ? "en" : "en";
+  const currentLocale = useLocale();
 
   useEffect(() => {
     function handleClickOutside(e: PointerEvent) {

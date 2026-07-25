@@ -170,8 +170,12 @@
     "fact8": "迦納是非洲最大的黃金生產國，擁有無限儲量"
   },
   "products": {
+    "heroBadge": "產品",
     "title": "黃金與鑽石產品",
+    "heroSubtitle": "通過我們的無汞、無氰化物回收工藝生產的高品質黃金和鑽石。",
     "subtitle": "通過我們的無汞、無氰化物回收工藝生產的高品質黃金和鑽石。",
+    "gridTitle": "我們的產品系列",
+    "gridSubtitle": "從勘探到國際交易的完整黃金礦業產品。",
     "dore": "純金粗煉金錠",
     "doreDesc": "在我們的現場冶煉設施中，使用專有的無汞回收工藝生產的高純度金錠。",
     "concentrate": "黃金精礦",
@@ -183,6 +187,28 @@
     "trading": "國際貿易",
     "tradingDesc": "與倫敦、蘇黎世、迪拜和新加坡的國際煉廠建立了貿易關係。",
     "specifications": "規格",
+    "recoveryRate": "回收率",
+    "cutOff": "邊界品位",
+    "grade": "平均品位",
+    "processing": "選礦加工",
+    "logistics": "物流",
+    "compliance": "合規",
+    "process": "工藝",
+    "markets": "市場",
+    "purityTitle": "純度與認證",
+    "puritySubtitle": "我們的無汞工藝生產純度極高的黃金，並獲得國際認可的認證。",
+    "purityCertTitle": "認證化驗報告",
+    "purityCertDesc": "每批貨物均附有獨立的認證化驗報告，驗證黃金的純度和重量符合國際標準。",
+    "purityAssayTitle": "90% 回收率",
+    "purityAssayDesc": "我們先進的無汞無氰化物回收工藝在0.1 g/t邊界品位下實現90%的黃金回收率。",
+    "purityGlobalTitle": "國際標準",
+    "purityGlobalDesc": "生產的黃金符合LBMA良好交割標準，被全球煉廠和銀行認可。",
+    "tradingTitle": "國際貿易合作夥伴",
+    "tradingSubtitle": "與領先的國際煉廠和貿易公司建立戰略合作夥伴關係。",
+    "ctaTitle": "準備合作了嗎？",
+    "ctaSubtitle": "無論您是投資者、買家還是技術合作夥伴，我們都歡迎對話。",
+    "ctaContact": "聯繫我們",
+    "ctaInvestors": "投資者關係",
     "environmental": "環保優勢",
     "environmentalDesc": "我們的專利工藝在不使用有毒化學品的情況下生產純金——對環保意識強的買家具有獨特吸引力。"
   },
@@ -246,12 +272,31 @@
     }
   },
   "gallery": {
+    "heroBadge": "圖庫",
     "title": "營運圖庫",
+    "heroSubtitle": "通過圖片展示我們的礦業營運、LiDAR 技術和服務的社區。",
     "subtitle": "通過圖片展示我們的礦業營運、LiDAR 技術和服務的社區。",
+    "browseTitle": "瀏覽我們的營運",
+    "browseSubtitle": "按類別篩選以探索我們礦業營運的不同方面。",
+    "filter": {
+      "all": "全部",
+      "mining": "礦業營運",
+      "processing": "選礦加工設施",
+      "community": "社區",
+      "landscape": "風景"
+    },
     "mining": "礦業營運",
     "processing": "選礦加工設施",
     "community": "社區",
-    "landscape": "風景"
+    "landscape": "風景",
+    "pitOperations": "露天開採作業",
+    "processingPlant": "選礦廠",
+    "goldBars": "黃金粗煉金錠",
+    "explorationCamp": "勘探營地",
+    "aerialView": "航拍勘測視圖",
+    "teamOperations": "團隊作業",
+    "heavyEquipment": "重型設備",
+    "refinedGold": "精煉黃金"
   },
   "contact": {
     "title": "聯繫我們",
@@ -279,6 +324,7 @@
       "headquarters": "營運辦公室",
       "address": "DTD GT-344-7879 14 TEMA WEST ACCRA GHANA",
       "phone": "+233 (0) 57-055-1514",
+      "emailLabel": "電子郵件",
       "email": "info@mcquest.gold",
       "whatsapp": "+233 (0) 570-551-514",
       "hours": "週一至週五：上午8:00 — 下午5:00 (GMT)",
@@ -326,9 +372,97 @@
     "registration": "Ref No: CS007250125 | TIN: C0065010639 | Sector: GOLD & DIAMOND Miner"
   },
   "legal": {
+    "backToHome": "返回首頁",
     "privacyTitle": "隱私政策",
     "termsTitle": "服務條款",
-    "lastUpdated": "最後更新"
+    "lastUpdated": "最後更新",
+    "privacyQuestions": "對隱私政策有疑問？",
+    "privacyQuestionsDesc": "如果您對本隱私政策有任何疑問，請聯繫我們。",
+    "termsQuestions": "對條款有疑問？",
+    "termsQuestionsDesc": "如果您對本服務條款有任何疑問，請聯繫我們。",
+    "privacy": {
+      "collection": {
+        "title": "我們收集的信息",
+        "p1": "我們收集您直接提供的信息，例如您填寫聯繫表單、訂閱我們的通訊或與我們溝通時。這可能包括您的姓名、電子郵件地址、公司名稱和電話號碼。",
+        "p2": "我們還在您訪問我們的網站時自動收集某些信息，包括您的IP地址、瀏覽器類型、操作系統、推薦URL和訪問的頁面。",
+        "p3": "我們不會通過本網站收集敏感個人信息，如財務數據、健康信息或政府簽發的身份證明。"
+      },
+      "usage": {
+        "title": "我們如何使用您的信息",
+        "p1": "我們使用收集的信息來回應您的查詢、提供所要求的服務、發送通訊更新以及改進我們的網站和營運。",
+        "p2": "我們也可能使用您的信息來遵守法律義務、執行我們的條款並保護Mc Quest及其利益相關者的權利和安全。",
+        "p3": "我們不會出售、交易或出租您的個人信息給第三方。"
+      },
+      "cookies": {
+        "title": "Cookie和追踪",
+        "p1": "我們的網站使用必要的Cookie以確保正常功能。這些Cookie不會收集個人信息。",
+        "p2": "我們可能使用分析工具來了解訪問者如何與我們的網站互動。這些數據是匯總的，不識別單個用戶。",
+        "p3": "您可以通過瀏覽器偏好設置控制Cookie設置。"
+      },
+      "thirdParties": {
+        "title": "第三方服務",
+        "p1": "我們可能使用第三方服務，如分析提供商和託管服務。這些提供商僅在履行其職責所需時訪問信息，並有義務保護您的數據。",
+        "p2": "我們不會將您的個人信息與第三方共享用於營銷目的。"
+      },
+      "security": {
+        "title": "數據安全",
+        "p1": "我們實施適當的技術和組織措施來保護您的個人信息免受未經授權的訪問、更改、披露或破壞。",
+        "p2": "雖然我們努力保護您的數據，但通過互聯網傳輸的任何方法都不是100%安全的。我們無法保證絕對安全。"
+      },
+      "rights": {
+        "title": "您的權利",
+        "p1": "您有權訪問、更正或刪除您的個人信息。您也可以隨時選擇退出接收我們的通訊。",
+        "p2": "要行使這些權利，請使用以下提供的信息聯繫我們。"
+      },
+      "contactPolicy": {
+        "title": "聯繫我們諮詢隱私問題",
+        "p1": "如果您對本隱私政策有任何問題或疑慮，請聯繫我們的數據保護團隊。",
+        "p2": "我們將在30個工作日內回覆您的查詢。"
+      },
+      "changes": {
+        "title": "本政策的變更",
+        "p1": "我們可能會不時更新本隱私政策。變更將在本頁面上發布，並附有更新的修訂日期。",
+        "p2": "我們建議您定期查看此政策以了解任何變更。"
+      }
+    },
+    "terms": {
+      "acceptance": {
+        "title": "接受條款",
+        "p1": "訪問和使用Mc Quest GOLD & DIAMOND MINING INDUSTRY LTD網站，即表示您同意並受本服務條款的約束。",
+        "p2": "如果您不同意這些條款，請不要使用本網站。"
+      },
+      "use": {
+        "title": "網站使用",
+        "p1": "本網站僅提供有關Mc Quest GOLD & DIAMOND MINING INDUSTRY LTD及其礦業營運的信息。您可以遵守適用法律和法規使用本網站。",
+        "p2": "您同意不誤用本網站、未經授權嘗試訪問或干擾其正常運作。",
+        "p3": "本網站的內容僅供一般信息，不構成投資建議、金融建議或投資招攬。"
+      },
+      "ip": {
+        "title": "知識產權",
+        "p1": "本網站的所有內容，包括文本、圖形、標誌、圖像和軟件，均為Mc Quest GOLD & DIAMOND MINING INDUSTRY LTD的財產，受版權和知識產權法律保護。",
+        "p2": "未經事先書面同意，不得複製、分發或創建任何內容的衍生作品。"
+      },
+      "disclaimer": {
+        "title": "免責聲明",
+        "p1": "本網站及其內容按「現狀」提供，不附帶任何明示或默示的保證。Mc Quest不對所呈現信息的準確性、完整性或可靠性作出任何陳述。",
+        "p2": "本網站的前瞻性陳述涉及風險和不確定性。實際結果可能與預期有重大差異。"
+      },
+      "liability": {
+        "title": "責任限制",
+        "p1": "Mc Quest GOLD & DIAMOND MINING INDUSTRY LTD不對因使用本網站而引起的任何直接、間接、附帶或後果性損害承擔責任。",
+        "p2": "此限制不論法律理論如何，無論是基於合同、侵權、過失或任何其他依據。"
+      },
+      "governingLaw": {
+        "title": "管轄法律",
+        "p1": "本服務條款受加納共和國法律管轄並按其解釋。",
+        "p2": "因這些條款引起的任何爭議應受加納法院的專屬管轄。"
+      },
+      "contactTerms": {
+        "title": "聯繫我們諮詢條款",
+        "p1": "如果您對本服務條款有任何疑問，請聯繫我們的法律團隊。",
+        "p2": "我們將在30個工作日內回覆您的查詢。"
+      }
+    }
   },
   "home": {
     "sections": {

@@ -170,10 +170,14 @@
     "fact8": "Ghana es el mayor productor de oro de África con reservas ilimitadas"
   },
   "products": {
+    "heroBadge": "Productos",
     "title": "Productos de Oro y Diamantes",
+    "heroSubtitle": "Oro y diamantes de calidad premium producidos a través de nuestro proceso de recuperación sin mercurio ni cianuro.",
     "subtitle": "Oro y diamantes de calidad premium producidos a través de nuestro proceso de recuperación sin mercurio ni cianuro.",
+    "gridTitle": "Nuestra Gama de Productos",
+    "gridSubtitle": "Productos mineros de oro integrales desde la exploración hasta las barras doré negociadas internacionalmente.",
     "dore": "Barras de Oro Puro Doré",
-    "doreDesc": "Barras de oro de alta pureza producidas en nuestra instalación de fundación \"in situ\" utilizando nuestro proceso patentado de recuperación sin mercurio.",
+    "doreDesc": "Barras de oro de alta pureza producidas en nuestra instalación de fundición in situ utilizando nuestro proceso patentado de recuperación sin mercurio.",
     "concentrate": "Concentrado de Oro",
     "concentrateDesc": "Concentrado de oro de alta ley producido a través de nuestros circuitos de procesamiento modernos.",
     "export": "Servicios de Exportación",
@@ -183,6 +187,28 @@
     "trading": "Comercio Internacional",
     "tradingDesc": "Relaciones comerciales establecidas con refinerías internacionales en Londres, Zúrich, Dubái y Singapur.",
     "specifications": "Especificaciones",
+    "recoveryRate": "Tasa de Recuperación",
+    "cutOff": "Ley de Corte",
+    "grade": "Ley Promedio",
+    "processing": "Procesamiento",
+    "logistics": "Logística",
+    "compliance": "Cumplimiento",
+    "process": "Proceso",
+    "markets": "Mercados",
+    "purityTitle": "Pureza y Certificación",
+    "puritySubtitle": "Nuestro proceso sin mercurio produce oro de pureza excepcional con certificaciones reconocidas internacionalmente.",
+    "purityCertTitle": "Informes de Ensayo Certificados",
+    "purityCertDesc": "Cada envío va acompañado de informes de ensayo certificados independientes que verifican la pureza y el peso del oro según estándares internacionales.",
+    "purityAssayTitle": "Tasa de Recuperación del 90%",
+    "purityAssayDesc": "Nuestro avanzado proceso de recuperación sin mercurio ni cianuro logra una tasa de recuperación de oro del 90% con una ley de corte de 0,1 g/t.",
+    "purityGlobalTitle": "Estándares Internacionales",
+    "purityGlobalDesc": "El oro producido cumple con los estándares de buena entrega del LBMA, aceptado por refinerías y bancos de todo el mundo.",
+    "tradingTitle": "Socios Comerciales Internacionales",
+    "tradingSubtitle": "Asociaciones estratégicas con refinerías y casas de comercio internacionales líderes.",
+    "ctaTitle": "¿Listo para Asociarse?",
+    "ctaSubtitle": "Ya sea que usted sea inversor, comprador o socio técnico, damos la bienvenida a la conversación.",
+    "ctaContact": "Contáctenos",
+    "ctaInvestors": "Relaciones con Inversionistas",
     "environmental": "Ventaja Ambiental",
     "environmentalDesc": "Nuestro proceso patentado produce oro puro sin productos químicos tóxicos — atractivo de manera única para compradores conscientes del medio ambiente."
   },
@@ -246,12 +272,31 @@
     }
   },
   "gallery": {
+    "heroBadge": "Galería",
     "title": "Galería de Operaciones",
+    "heroSubtitle": "Un recorrido visual por nuestras operaciones mineras, tecnología LiDAR y comunidades a las que servimos.",
     "subtitle": "Un recorrido visual por nuestras operaciones mineras, tecnología LiDAR y comunidades a las que servimos.",
+    "browseTitle": "Explore Nuestras Operaciones",
+    "browseSubtitle": "Filtre por categoría para explorar diferentes aspectos de nuestras operaciones mineras.",
+    "filter": {
+      "all": "Todos",
+      "mining": "Operaciones Mineras",
+      "processing": "Instalaciones de Procesamiento",
+      "community": "Comunidad",
+      "landscape": "Paisaje"
+    },
     "mining": "Operaciones Mineras",
     "processing": "Instalaciones de Procesamiento",
     "community": "Comunidad",
-    "landscape": "Paisaje"
+    "landscape": "Paisaje",
+    "pitOperations": "Operaciones a Cielo Abierto",
+    "processingPlant": "Planta de Procesamiento",
+    "goldBars": "Barras de Oro Doré",
+    "explorationCamp": "Campamento de Exploración",
+    "aerialView": "Vista Aérea del Levantamiento",
+    "teamOperations": "Operaciones del Equipo",
+    "heavyEquipment": "Equipo Pesado",
+    "refinedGold": "Oro Refinado"
   },
   "contact": {
     "title": "Contáctenos",
@@ -279,6 +324,7 @@
       "headquarters": "Oficina de Operaciones",
       "address": "DTD GT-344-7879 14 TEMA WEST ACCRA GHANA",
       "phone": "+233 (0) 57-055-1514",
+      "emailLabel": "Correo Electrónico",
       "email": "info@mcquest.gold",
       "whatsapp": "+233 (0) 570-551-514",
       "hours": "Lun — Vie: 8:00 AM — 5:00 PM (GMT)",
@@ -326,9 +372,97 @@
     "registration": "Ref No: CS007250125 | TIN: C0065010639 | Sector: GOLD & DIAMOND Miner"
   },
   "legal": {
+    "backToHome": "Volver al Inicio",
     "privacyTitle": "Política de Privacidad",
     "termsTitle": "Términos de Servicio",
-    "lastUpdated": "Última actualización"
+    "lastUpdated": "Última actualización",
+    "privacyQuestions": "¿Preguntas sobre Privacidad?",
+    "privacyQuestionsDesc": "Si tiene alguna pregunta sobre esta Política de Privacidad, por favor contáctenos.",
+    "termsQuestions": "¿Preguntas sobre los Términos?",
+    "termsQuestionsDesc": "Si tiene alguna pregunta sobre estos Términos de Servicio, por favor contáctenos.",
+    "privacy": {
+      "collection": {
+        "title": "Información que Recopilamos",
+        "p1": "Recopilamos información que usted nos proporciona directamente, como cuando completa un formulario de contacto, se suscribe a nuestro boletín o se comunica con nosotros. Esto puede incluir su nombre, dirección de correo electrónico, nombre de empresa y número de teléfono.",
+        "p2": "También recopilamos cierta información automáticamente cuando visita nuestro sitio web, incluyendo su dirección IP, tipo de navegador, sistema operativo, URL de referencia y páginas visitadas.",
+        "p3": "No recopilamos información personal sensible como datos financieros, información de salud o identificadores gubernamentales a través de este sitio web."
+      },
+      "usage": {
+        "title": "Cómo Usamos Su Información",
+        "p1": "Usamos la información recopilada para responder a sus consultas, proporcionar servicios solicitados, enviar actualizaciones del boletín y mejorar nuestro sitio web y operaciones.",
+        "p2": "También podemos usar su información para cumplir con obligaciones legales, hacer cumplir nuestros términos y proteger los derechos y la seguridad de Mc Quest y nuestros grupos de interés.",
+        "p3": "No vendemos, intercambiamos ni alquilamos su información personal a terceros."
+      },
+      "cookies": {
+        "title": "Cookies y Rastreo",
+        "p1": "Nuestro sitio web utiliza cookies esenciales para garantizar el funcionamiento adecuado. Estas cookies no recopilan información personal.",
+        "p2": "Podemos usar herramientas de análisis para comprender cómo los visitantes interactúan con nuestro sitio web. Estos datos son agregados e no identifican usuarios individuales.",
+        "p3": "Puede controlar la configuración de cookies a través de las preferencias de su navegador."
+      },
+      "thirdParties": {
+        "title": "Servicios de Terceros",
+        "p1": "Podemos usar servicios de terceros como proveedores de análisis y servicios de alojamiento. Estos proveedores tienen acceso a información solo según sea necesario para realizar sus funciones y están obligados a proteger sus datos.",
+        "p2": "No compartimos su información personal con terceros con fines de marketing."
+      },
+      "security": {
+        "title": "Seguridad de Datos",
+        "p1": "Implementamos medidas técnicas y organizativas apropiadas para proteger su información personal contra acceso no autorizado, alteración, divulgación o destrucción.",
+        "p2": "Si bien nos esforzamos por proteger sus datos, ningún método de transmisión por Internet es 100% seguro. No podemos garantizar la seguridad absoluta."
+      },
+      "rights": {
+        "title": "Sus Derechos",
+        "p1": "Tiene derecho a acceder, corregir o eliminar su información personal. También puede optar por no recibir comunicaciones nuestras en cualquier momento.",
+        "p2": "Para ejercer estos derechos, por favor contáctenos usando la información proporcionada a continuación."
+      },
+      "contactPolicy": {
+        "title": "Contáctenos sobre Privacidad",
+        "p1": "Si tiene alguna pregunta o inquietud sobre esta Política de Privacidad, por favor contacte a nuestro equipo de Protección de Datos.",
+        "p2": "Responderemos a su consulta dentro de 30 días hábiles."
+      },
+      "changes": {
+        "title": "Cambios en Esta Política",
+        "p1": "Podemos actualizar esta Política de Privacidad de vez en cuando. Los cambios se publicarán en esta página con una fecha de revisión actualizada.",
+        "p2": "Le recomendamos revisar esta política periódicamente para ver cualquier cambio."
+      }
+    },
+    "terms": {
+      "acceptance": {
+        "title": "Aceptación de Términos",
+        "p1": "Al acceder y usar el sitio web de Mc Quest GOLD & DIAMOND MINING INDUSTRY LTD, usted acepta y está de acuerdo en estar sujeto a estos Términos de Servicio.",
+        "p2": "Si no está de acuerdo con estos términos, por favor no use este sitio web."
+      },
+      "use": {
+        "title": "Uso del Sitio Web",
+        "p1": "Este sitio web se proporciona con fines informativos sobre Mc Quest GOLD & DIAMOND MINING INDUSTRY LTD y sus operaciones mineras. Puede usar este sitio web en cumplimiento con las leyes y regulaciones aplicables.",
+        "p2": "Usted acepta no malinterpretar el sitio web, intentar obtener acceso no autorizado o interferir con su funcionamiento adecuado.",
+        "p3": "El contenido de este sitio web tiene como objetivo solo información general y no constituye asesoramiento de inversión, asesoramiento financiero o una solicitud de inversión."
+      },
+      "ip": {
+        "title": "Propiedad Intelectual",
+        "p1": "Todo el contenido de este sitio web, incluyendo texto, gráficos, logotipos, imágenes y software, es propiedad de Mc Quest GOLD & DIAMOND MINING INDUSTRY LTD y está protegido por leyes de propiedad intelectual y derechos de autor.",
+        "p2": "No puede reproducir, distribuir ni crear trabajos derivados de ningún contenido sin consentimiento previo por escrito."
+      },
+      "disclaimer": {
+        "title": "Descargo de Responsabilidad",
+        "p1": "Este sitio web y su contenido se proporcionan \"tal cual\" sin garantías de ningún tipo. Mc Quest no hace representaciones sobre la exactitud, integridad o fiabilidad de la información presentada.",
+        "p2": "Las declaraciones a futuro en este sitio web involucran riesgos e incertidumbres. Los resultados reales pueden diferir materialmente de los anticipados."
+      },
+      "liability": {
+        "title": "Limitación de Responsabilidad",
+        "p1": "Mc Quest GOLD & DIAMOND MINING INDUSTRY LTD no será responsable por ningún daño directo, indirecto, incidental o consecuente que surja del uso de este sitio web.",
+        "p2": "Esta limitación se aplica independientemente de la teoría legal, ya sea basada en contrato, agravio, negligencia o cualquier otra base."
+      },
+      "governingLaw": {
+        "title": "Ley Aplicable",
+        "p1": "Estos Términos de Servicio se rigen e interpretan de acuerdo con las leyes de la República de Ghana.",
+        "p2": "Cualquier disputa que surja de estos términos estará sujeta a la jurisdicción exclusiva de los tribunales de Ghana."
+      },
+      "contactTerms": {
+        "title": "Contáctenos sobre Términos",
+        "p1": "Si tiene alguna pregunta sobre estos Términos de Servicio, por favor contacte a nuestro equipo legal.",
+        "p2": "Responderemos a su consulta dentro de 30 días hábiles."
+      }
+    }
   },
   "home": {
     "sections": {

@@ -170,8 +170,12 @@
     "fact8": "Ghana is Africa's largest gold producer with unlimited reserves"
   },
   "products": {
+    "heroBadge": "Products",
     "title": "Gold & Diamond Products",
+    "heroSubtitle": "Premium quality gold and diamonds produced through our non-mercury, cyanide-free recovery process.",
     "subtitle": "Premium quality gold and diamonds produced through our non-mercury, cyanide-free recovery process.",
+    "gridTitle": "Our Product Range",
+    "gridSubtitle": "Comprehensive gold mining products from exploration through to internationally traded dore bars.",
     "dore": "Pure Gold Dore Bars",
     "doreDesc": "High-purity gold bars produced at our on-site smelting facility using our proprietary non-mercury recovery process.",
     "concentrate": "Gold Concentrate",
@@ -183,6 +187,28 @@
     "trading": "International Trading",
     "tradingDesc": "Established trading relationships with international refineries across London, Zurich, Dubai, and Singapore.",
     "specifications": "Specifications",
+    "recoveryRate": "Recovery Rate",
+    "cutOff": "Cut-off Grade",
+    "grade": "Average Grade",
+    "processing": "Processing",
+    "logistics": "Logistics",
+    "compliance": "Compliance",
+    "process": "Process",
+    "markets": "Markets",
+    "purityTitle": "Purity & Certification",
+    "puritySubtitle": "Our non-mercury process produces gold of exceptional purity with internationally recognized certifications.",
+    "purityCertTitle": "Certified Assay Reports",
+    "purityCertDesc": "Every shipment is accompanied by independent certified assay reports verifying gold purity and weight to international standards.",
+    "purityAssayTitle": "90% Recovery Rate",
+    "purityAssayDesc": "Our advanced non-mercury, cyanide-free recovery process achieves a 90% gold recovery rate at a 0.1 g/t cut-off grade.",
+    "purityGlobalTitle": "International Standards",
+    "purityGlobalDesc": "Gold produced meets LBMA Good Delivery standards, accepted by refineries and banks worldwide.",
+    "tradingTitle": "International Trading Partners",
+    "tradingSubtitle": "Strategic partnerships with leading international refineries and trading houses.",
+    "ctaTitle": "Ready to Partner?",
+    "ctaSubtitle": "Whether you are an investor, buyer, or technical partner, we welcome the conversation.",
+    "ctaContact": "Contact Us",
+    "ctaInvestors": "Investor Relations",
     "environmental": "Environmental Advantage",
     "environmentalDesc": "Our proprietary process produces pure gold without toxic chemicals — uniquely attractive to environmentally conscious buyers."
   },
@@ -246,12 +272,31 @@
     }
   },
   "gallery": {
+    "heroBadge": "Gallery",
     "title": "Operations Gallery",
+    "heroSubtitle": "A visual journey through our mining operations, LiDAR technology, and communities we serve.",
     "subtitle": "A visual journey through our mining operations, LiDAR technology, and communities we serve.",
+    "browseTitle": "Browse Our Operations",
+    "browseSubtitle": "Filter by category to explore different aspects of our mining operations.",
+    "filter": {
+      "all": "All",
+      "mining": "Mining Operations",
+      "processing": "Processing Facilities",
+      "community": "Community",
+      "landscape": "Landscape"
+    },
     "mining": "Mining Operations",
     "processing": "Processing Facilities",
     "community": "Community",
-    "landscape": "Landscape"
+    "landscape": "Landscape",
+    "pitOperations": "Open Pit Operations",
+    "processingPlant": "Processing Plant",
+    "goldBars": "Gold Dore Bars",
+    "explorationCamp": "Exploration Camp",
+    "aerialView": "Aerial Survey View",
+    "teamOperations": "Team Operations",
+    "heavyEquipment": "Heavy Equipment",
+    "refinedGold": "Refined Gold"
   },
   "contact": {
     "title": "Contact Us",
@@ -279,6 +324,7 @@
       "headquarters": "Operations Office",
       "address": "DTD GT-344-7879 14 TEMA WEST ACCRA GHANA",
       "phone": "+233 (0) 57-055-1514",
+      "emailLabel": "Email",
       "email": "info@mcquest.gold",
       "whatsapp": "+233 (0) 570-551-514",
       "hours": "Mon — Fri: 8:00 AM — 5:00 PM (GMT)",
@@ -326,9 +372,97 @@
     "registration": "Ref No: CS007250125 | TIN: C0065010639 | Sector: GOLD & DIAMOND Miner"
   },
   "legal": {
+    "backToHome": "Back to Home",
     "privacyTitle": "Privacy Policy",
     "termsTitle": "Terms of Service",
-    "lastUpdated": "Last updated"
+    "lastUpdated": "Last updated",
+    "privacyQuestions": "Questions About Privacy?",
+    "privacyQuestionsDesc": "If you have any questions about this Privacy Policy, please contact us.",
+    "termsQuestions": "Questions About Terms?",
+    "termsQuestionsDesc": "If you have any questions about these Terms of Service, please contact us.",
+    "privacy": {
+      "collection": {
+        "title": "Information We Collect",
+        "p1": "We collect information you provide directly, such as when you fill out a contact form, subscribe to our newsletter, or communicate with us. This may include your name, email address, company name, and phone number.",
+        "p2": "We also collect certain information automatically when you visit our website, including your IP address, browser type, operating system, referring URLs, and pages visited.",
+        "p3": "We do not collect sensitive personal information such as financial data, health information, or government-issued identifiers through this website."
+      },
+      "usage": {
+        "title": "How We Use Your Information",
+        "p1": "We use the information we collect to respond to your inquiries, provide requested services, send newsletter updates, and improve our website and operations.",
+        "p2": "We may also use your information to comply with legal obligations, enforce our terms, and protect the rights and safety of Mc Quest and our stakeholders.",
+        "p3": "We do not sell, trade, or rent your personal information to third parties."
+      },
+      "cookies": {
+        "title": "Cookies & Tracking",
+        "p1": "Our website uses essential cookies to ensure proper functionality. These cookies do not collect personal information.",
+        "p2": "We may use analytics tools to understand how visitors interact with our website. This data is aggregated and does not identify individual users.",
+        "p3": "You can control cookie settings through your browser preferences."
+      },
+      "thirdParties": {
+        "title": "Third-Party Services",
+        "p1": "We may use third-party services such as analytics providers and hosting services. These providers have access to information only as needed to perform their functions and are obligated to protect your data.",
+        "p2": "We do not share your personal information with third parties for marketing purposes."
+      },
+      "security": {
+        "title": "Data Security",
+        "p1": "We implement appropriate technical and organizational measures to protect your personal information against unauthorized access, alteration, disclosure, or destruction.",
+        "p2": "While we strive to protect your data, no method of transmission over the Internet is 100% secure. We cannot guarantee absolute security."
+      },
+      "rights": {
+        "title": "Your Rights",
+        "p1": "You have the right to access, correct, or delete your personal information. You may also opt out of receiving communications from us at any time.",
+        "p2": "To exercise these rights, please contact us using the information provided below."
+      },
+      "contactPolicy": {
+        "title": "Contact Us About Privacy",
+        "p1": "If you have any questions or concerns about this Privacy Policy, please contact our Data Protection team.",
+        "p2": "We will respond to your inquiry within 30 business days."
+      },
+      "changes": {
+        "title": "Changes to This Policy",
+        "p1": "We may update this Privacy Policy from time to time. Changes will be posted on this page with an updated revision date.",
+        "p2": "We encourage you to review this policy periodically for any changes."
+      }
+    },
+    "terms": {
+      "acceptance": {
+        "title": "Acceptance of Terms",
+        "p1": "By accessing and using the Mc Quest GOLD & DIAMOND MINING INDUSTRY LTD website, you accept and agree to be bound by these Terms of Service.",
+        "p2": "If you do not agree to these terms, please do not use this website."
+      },
+      "use": {
+        "title": "Use of Website",
+        "p1": "This website is provided for informational purposes about Mc Quest GOLD & DIAMOND MINING INDUSTRY LTD and its mining operations. You may use this website in compliance with applicable laws and regulations.",
+        "p2": "You agree not to misuse the website, attempt to gain unauthorized access, or interfere with its proper functioning.",
+        "p3": "The content on this website is intended for general information only and does not constitute investment advice, financial advice, or a solicitation of investment."
+      },
+      "ip": {
+        "title": "Intellectual Property",
+        "p1": "All content on this website, including text, graphics, logos, images, and software, is the property of Mc Quest GOLD & DIAMOND MINING INDUSTRY LTD and is protected by copyright and intellectual property laws.",
+        "p2": "You may not reproduce, distribute, or create derivative works from any content without prior written consent."
+      },
+      "disclaimer": {
+        "title": "Disclaimer",
+        "p1": "This website and its content are provided 'as is' without warranties of any kind. Mc Quest makes no representations about the accuracy, completeness, or reliability of the information presented.",
+        "p2": "Forward-looking statements on this website involve risks and uncertainties. Actual results may differ materially from those anticipated."
+      },
+      "liability": {
+        "title": "Limitation of Liability",
+        "p1": "Mc Quest GOLD & DIAMOND MINING INDUSTRY LTD shall not be liable for any direct, indirect, incidental, or consequential damages arising from the use of this website.",
+        "p2": "This limitation applies regardless of the legal theory, whether based on contract, tort, negligence, or any other basis."
+      },
+      "governingLaw": {
+        "title": "Governing Law",
+        "p1": "These Terms of Service are governed by and construed in accordance with the laws of the Republic of Ghana.",
+        "p2": "Any disputes arising under these terms shall be subject to the exclusive jurisdiction of the courts of Ghana."
+      },
+      "contactTerms": {
+        "title": "Contact Us About Terms",
+        "p1": "If you have any questions about these Terms of Service, please contact our legal team.",
+        "p2": "We will respond to your inquiry within 30 business days."
+      }
+    }
   },
   "home": {
     "sections": {
