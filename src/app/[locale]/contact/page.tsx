@@ -86,10 +86,10 @@ export default function ContactPage() {
               viewport={{ once: true, margin: "-100px" }}
               transition={{ duration: 0.7 }}
             >
-              <h2 className="text-2xl sm:text-3xl font-bold text-slate-custom font-[family-name:var(--font-heading)] mb-4">
+              <h2 className="text-2xl sm:text-3xl font-bold text-ivory font-[family-name:var(--font-heading)] mb-4">
                 {t("formTitle")}
               </h2>
-              <p className="text-slate-custom/60 mb-8 leading-relaxed">
+              <p className="text-ivory/60 mb-8 leading-relaxed">
                 {t("formSubtitle")}
               </p>
               <ContactForm />
@@ -103,25 +103,25 @@ export default function ContactPage() {
               transition={{ duration: 0.7, delay: 0.2 }}
               className="space-y-5"
             >
-              <h2 className="text-2xl sm:text-3xl font-bold text-slate-custom font-[family-name:var(--font-heading)] mb-4">
+              <h2 className="text-2xl sm:text-3xl font-bold text-ivory font-[family-name:var(--font-heading)] mb-4">
                 {t("infoTitle")}
               </h2>
-              <p className="text-slate-custom/60 mb-8 leading-relaxed">
+              <p className="text-ivory/60 mb-8 leading-relaxed">
                 {t("infoSubtitle")}
               </p>
 
               {contactCards.map((card, i) => {
                 const Icon = card.icon;
                 const content = (
-                  <div className="flex items-start gap-4 p-5 rounded-2xl bg-gold-50/50 border border-gold-100/40 hover:border-primary/30 transition-all group">
+                  <div className="flex items-start gap-4 p-5 rounded-2xl bg-white/5 border border-white/10 hover:border-primary/30 transition-all group">
                     <div className="w-12 h-12 rounded-xl gold-gradient flex items-center justify-center shrink-0 group-hover:scale-105 transition-transform">
                       <Icon className="w-5 h-5 text-dark" />
                     </div>
                     <div className="min-w-0">
-                      <p className="text-sm font-semibold text-slate-custom mb-1">
+                      <p className="text-sm font-semibold text-ivory mb-1">
                         {card.label}
                       </p>
-                      <p className="text-sm text-slate-custom/60 break-words">
+                      <p className="text-sm text-ivory/60 break-words">
                         {card.value}
                       </p>
                     </div>
@@ -158,11 +158,11 @@ export default function ContactPage() {
             transition={{ duration: 0.7 }}
             className="text-center mb-12"
           >
-            <h2 className="text-3xl sm:text-4xl font-bold text-slate-custom font-[family-name:var(--font-heading)] mb-4">
+            <h2 className="text-3xl sm:text-4xl font-bold text-ivory font-[family-name:var(--font-heading)] mb-4">
               {t("mapTitle")}
             </h2>
             <div className="line-gold mx-auto mb-4" />
-            <p className="text-slate-custom/60 max-w-xl mx-auto">
+            <p className="text-ivory/60 max-w-xl mx-auto">
               {t("mapSubtitle")}
             </p>
           </motion.div>

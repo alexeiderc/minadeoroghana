@@ -86,7 +86,7 @@ export default function ContactForm() {
     <form onSubmit={handleSubmit} className="space-y-5">
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
         <div>
-          <label className="block text-sm font-medium text-slate-custom mb-2">{t("name")}</label>
+          <label className="block text-sm font-medium text-white/80 mb-2">{t("name")}</label>
           <input
             type="text"
             value={formData.name}
@@ -96,7 +96,7 @@ export default function ContactForm() {
           {errors.name && <p className="text-red-500 text-xs mt-1">{errors.name}</p>}
         </div>
         <div>
-          <label className="block text-sm font-medium text-slate-custom mb-2">{t("email")}</label>
+          <label className="block text-sm font-medium text-white/80 mb-2">{t("email")}</label>
           <input
             type="email"
             value={formData.email}
@@ -109,7 +109,7 @@ export default function ContactForm() {
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
         <div>
-          <label className="block text-sm font-medium text-slate-custom mb-2">{t("company")}</label>
+          <label className="block text-sm font-medium text-white/80 mb-2">{t("company")}</label>
           <input
             type="text"
             value={formData.company}
@@ -118,7 +118,7 @@ export default function ContactForm() {
           />
         </div>
         <div>
-          <label className="block text-sm font-medium text-slate-custom mb-2">{t("subject")}</label>
+          <label className="block text-sm font-medium text-white/80 mb-2">{t("subject")}</label>
           <select
             value={formData.subject}
             onChange={(e) => handleChange("subject", e.target.value)}
@@ -134,7 +134,7 @@ export default function ContactForm() {
       </div>
 
       <div>
-        <label className="block text-sm font-medium text-slate-custom mb-2">{t("message")}</label>
+          <label className="block text-sm font-medium text-white/80 mb-2">{t("message")}</label>
         <textarea
           value={formData.message}
           onChange={(e) => handleChange("message", e.target.value)}
