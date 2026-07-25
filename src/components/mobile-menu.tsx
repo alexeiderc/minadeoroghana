@@ -43,7 +43,7 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
         )}
       >
         <div className="flex items-center justify-between p-6 border-b border-white/10">
-          <img src="/logo-compact-light.svg" alt="MC QUEST" className="h-8 w-auto" />
+          <img src="/logo.png" alt="MC QUEST" className="h-8 w-auto" width={32} height={32} />
           <button
             onClick={onClose}
             className="p-2 text-white/70 hover:text-white transition-colors"

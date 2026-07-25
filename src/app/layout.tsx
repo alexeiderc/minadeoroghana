@@ -49,7 +49,7 @@ export const metadata: Metadata = {
       "Sustainable gold and diamond mining in Ghana's Eastern Region using LiDAR 3D drone technology and non-mercury, cyanide-free recovery.",
   },
   icons: {
-    icon: "/favicon.svg",
+    icon: "/favicon.png",
   },
 };
 
