@@ -1,10 +1,10 @@
 "use client";
 
 import { useState, useEffect, useCallback } from "react";
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
 import { motion } from "framer-motion";
 import { Newspaper, RefreshCw, ExternalLink } from "lucide-react";
-import { newsArticles } from "@/data/news";
+import { getNewsArticles } from "@/lib/cms-content";
 import NewsCard from "@/components/news-card";
 import SectionHeader from "@/components/section-header";
 import ScrollReveal from "@/components/scroll-reveal";
@@ -32,8 +32,11 @@ type NewsTab = "company" | "industry";
 
 export default function NewsPage() {
   const t = useTranslations();
+  const locale = useLocale() as "en" | "es" | "pt" | "zh" | "th";
   const [activeTab, setActiveTab] = useState<NewsTab>("company");
   const [activeCategory, setActiveCategory] = useState<Category>("all");
+
+  const newsArticles = getNewsArticles(locale);
 
   const [goldbodArticles, setGoldbodArticles] = useState<GoldBodArticle[]>([]);
   const [goldbodLoading, setGoldbodLoading] = useState(false);
@@ -179,8 +182,8 @@ export default function NewsPage() {
               {filteredCompanyArticles.map((article) => (
                 <NewsCard
                   key={article.id}
-                  title={t(`news.${article.titleKey}`)}
-                  excerpt={t(`news.${article.excerptKey}`)}
+                  title={article.titleKey}
+                  excerpt={article.excerptKey}
                   date={new Date(article.date).toLocaleDateString("en-US", {
                     year: "numeric",
                     month: "long",

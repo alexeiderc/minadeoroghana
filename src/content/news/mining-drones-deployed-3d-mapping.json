@@ -1,0 +1,26 @@
+{
+  "slug": "mining-drones-deployed-3d-mapping",
+  "date": "2024-04-18",
+  "category": "operations",
+  "imageGradient": "from-yellow-800 to-amber-900",
+  "en": {
+    "title": "Mining Drones Deployed for 3D Geological Mapping",
+    "excerpt": "Advanced mining drones with LiDAR 3D technology now operational across all concession areas."
+  },
+  "es": {
+    "title": "Drones Mineros Desplegados para Mapeo Geológico 3D",
+    "excerpt": "Drones mineros avanzados con tecnología LiDAR 3D ahora operativos en todas las áreas de concesión."
+  },
+  "pt": {
+    "title": "Drones de Mineração Implantados para Mapeamento Geológico 3D",
+    "excerpt": "Drones de mineração avançados com tecnologia LiDAR 3D agora operacionais em todas as áreas de concessão."
+  },
+  "zh": {
+    "title": "礦業無人機已部署用於3D地質勘探",
+    "excerpt": "配備 LiDAR 3D 技術的先進礦業無人機現已在所有礦權區域投入運營。"
+  },
+  "th": {
+    "title": "โดรนทำเหมืองปรับใช้สำหรับแผนที่ทางธรณีวิทยา 3D",
+    "excerpt": "โดรนทำเหมืองขั้นสูงที่มีเทคโนโลยี LiDAR 3D พร้อมใช้งานในพื้นที่เหมืองทั้งหมดแล้ว"
+  }
+}

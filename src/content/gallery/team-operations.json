@@ -1,0 +1,11 @@
+{
+  "slug": "team-operations",
+  "span": "normal",
+  "gradient": "from-amber-700 to-yellow-500",
+  "order": 6,
+  "en": { "title": "Team Operations" },
+  "es": { "title": "Operaciones del Equipo" },
+  "pt": { "title": "Operações da Equipa" },
+  "zh": { "title": "團隊作業" },
+  "th": { "title": "การดำเนินงานของทีม" }
+}

@@ -1,0 +1,11 @@
+{
+  "slug": "aerial-view",
+  "span": "tall",
+  "gradient": "from-orange-800 to-yellow-700",
+  "order": 5,
+  "en": { "title": "Aerial Survey View" },
+  "es": { "title": "Vista Aérea del Levantamiento" },
+  "pt": { "title": "Vista Aérea do Levantamento" },
+  "zh": { "title": "航拍勘測視圖" },
+  "th": { "title": "ภาพถ่ายทางอากาศจากการสำรวจ" }
+}

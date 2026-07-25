@@ -1,0 +1,11 @@
+{
+  "slug": "exploration-camp",
+  "span": "normal",
+  "gradient": "from-yellow-800 to-amber-600",
+  "order": 4,
+  "en": { "title": "Exploration Camp" },
+  "es": { "title": "Campamento de Exploración" },
+  "pt": { "title": "Acampamento de Exploração" },
+  "zh": { "title": "勘探營地" },
+  "th": { "title": "ค่ายสำรวจ" }
+}

@@ -1,10 +1,10 @@
 "use client";
 
 import { useState, useMemo } from "react";
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
 import { motion } from "framer-motion";
 import { Images } from "lucide-react";
-import { galleryItems } from "@/data/gallery";
+import { getGalleryItems } from "@/lib/cms-content";
 import GalleryGrid from "@/components/gallery-grid";
 import SectionHeader from "@/components/section-header";
 import ScrollReveal from "@/components/scroll-reveal";
@@ -32,17 +32,20 @@ const categoryMap: Record<string, GalleryCategory> = {
 
 export default function GalleryPage() {
   const t = useTranslations();
+  const locale = useLocale() as "en" | "es" | "pt" | "zh" | "th";
   const [activeCategory, setActiveCategory] = useState<GalleryCategory>("all");
+
+  const galleryItems = getGalleryItems(locale);
 
   const mappedItems = useMemo(
     () =>
       galleryItems.map((item) => ({
         id: item.id,
         gradient: item.gradient,
-        title: t(item.titleKey),
+        title: item.titleKey,
         span: item.span,
       })),
-    [t]
+    [galleryItems]
   );
 
   const filteredItems = useMemo(

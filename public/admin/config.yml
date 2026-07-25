@@ -1,0 +1,138 @@
+backend:
+  name: git-gateway
+  branch: main
+  commit_messages:
+    create: "cms: create {{collection}} \"{{slug}}\""
+    update: "cms: update {{collection}} \"{{slug}}\""
+    delete: "cms: delete {{collection}} \"{{slug}}\""
+    uploadMedia: "[skip ci] cms: upload \"{{path}}\""
+    deleteMedia: "[skip ci] cms: delete \"{{path}}\""
+
+media_folder: "public/uploads"
+public_folder: "/uploads"
+
+collections:
+  - name: "news"
+    label: "News Articles"
+    folder: "src/content/news"
+    create: true
+    slug: "{{slug}}"
+    identifier_field: "slug"
+    summary: "{{title_en}}"
+    preview_path: "news"
+    fields:
+      - { label: "Slug", name: "slug", widget: "string", pattern: ["^[a-z0-9]+(?:-[a-z0-9]+)*$", "Lowercase letters, numbers, and hyphens only"] }
+      - { label: "Date", name: "date", widget: "datetime", format: "YYYY-MM-DD", date_format: "YYYY-MM-DD", time_format: false }
+      - label: "Category"
+        name: "category"
+        widget: "select"
+        options:
+          - { label: "Operations", value: "operations" }
+          - { label: "Corporate", value: "corporate" }
+          - { label: "Sustainability", value: "sustainability" }
+          - { label: "Financial", value: "financial" }
+        default: "corporate"
+      - { label: "Image Gradient", name: "imageGradient", widget: "string", default: "from-amber-900 to-yellow-800", hint: "Tailwind gradient classes for placeholder" }
+      - label: "English"
+        name: "en"
+        widget: "object"
+        fields:
+          - { label: "Title", name: "title", widget: "string", required: true }
+          - { label: "Excerpt", name: "excerpt", widget: "text", required: true, rows: 3 }
+      - label: "Spanish"
+        name: "es"
+        widget: "object"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Excerpt", name: "excerpt", widget: "text", rows: 3 }
+      - label: "Portuguese"
+        name: "pt"
+        widget: "object"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Excerpt", name: "excerpt", widget: "text", rows: 3 }
+      - label: "Chinese (Traditional)"
+        name: "zh"
+        widget: "object"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Excerpt", name: "excerpt", widget: "text", rows: 3 }
+      - label: "Thai"
+        name: "th"
+        widget: "object"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Excerpt", name: "excerpt", widget: "text", rows: 3 }
+
+  - name: "gallery"
+    label: "Gallery Items"
+    folder: "src/content/gallery"
+    create: true
+    slug: "{{slug}}"
+    identifier_field: "slug"
+    summary: "{{title_en}}"
+    preview_path: "gallery"
+    fields:
+      - { label: "Slug", name: "slug", widget: "string", pattern: ["^[a-z0-9]+(?:-[a-z0-9]+)*$", "Lowercase letters, numbers, and hyphens only"] }
+      - label: "Layout"
+        name: "span"
+        widget: "select"
+        options:
+          - { label: "Normal", value: "normal" }
+          - { label: "Tall", value: "tall" }
+          - { label: "Wide", value: "wide" }
+        default: "normal"
+      - { label: "Image Gradient", name: "gradient", widget: "string", default: "from-amber-800 to-yellow-600", hint: "Tailwind gradient classes for placeholder" }
+      - { label: "Sort Order", name: "order", widget: "number", default: 0 }
+      - label: "English"
+        name: "en"
+        widget: "object"
+        fields:
+          - { label: "Title", name: "title", widget: "string", required: true }
+      - label: "Spanish"
+        name: "es"
+        widget: "object"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+      - label: "Portuguese"
+        name: "pt"
+        widget: "object"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+      - label: "Chinese (Traditional)"
+        name: "zh"
+        widget: "object"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+      - label: "Thai"
+        name: "th"
+        widget: "object"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+
+  - name: "site-texts"
+    label: "Site Texts"
+    folder: "src/content/texts"
+    create: true
+    slug: "{{slug}}"
+    identifier_field: "slug"
+    summary: "{{slug}}"
+    fields:
+      - { label: "Slug", name: "slug", widget: "string", hint: "Unique key, e.g. 'hero-title', 'about-mission'" }
+      - { label: "Section", name: "section", widget: "string", hint: "Grouping label, e.g. 'Hero', 'About', 'Operations'" }
+      - label: "English"
+        name: "en"
+        widget: "text"
+        required: true
+      - label: "Spanish"
+        name: "es"
+        widget: "text"
+      - label: "Portuguese"
+        name: "pt"
+        widget: "text"
+      - label: "Chinese (Traditional)"
+        name: "zh"
+        widget: "text"
+      - label: "Thai"
+        name: "th"
+        widget: "text"

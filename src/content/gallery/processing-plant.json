@@ -1,0 +1,11 @@
+{
+  "slug": "processing-plant",
+  "span": "wide",
+  "gradient": "from-yellow-700 to-amber-500",
+  "order": 2,
+  "en": { "title": "Processing Plant" },
+  "es": { "title": "Planta de Procesamiento" },
+  "pt": { "title": "Planta de Processamento" },
+  "zh": { "title": "選礦廠" },
+  "th": { "title": "โรงงานแปรรูป" }
+}

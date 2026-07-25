@@ -1,0 +1,11 @@
+{
+  "slug": "pit-operations",
+  "span": "tall",
+  "gradient": "from-amber-800 to-yellow-600",
+  "order": 1,
+  "en": { "title": "Open Pit Operations" },
+  "es": { "title": "Operaciones a Cielo Abierto" },
+  "pt": { "title": "Operações a Céu Aberto" },
+  "zh": { "title": "露天開採作業" },
+  "th": { "title": "การขุดเปิดหน้าดิน" }
+}

@@ -1,0 +1,11 @@
+{
+  "slug": "refined-gold",
+  "span": "normal",
+  "gradient": "from-amber-600 to-yellow-400",
+  "order": 8,
+  "en": { "title": "Refined Gold" },
+  "es": { "title": "Oro Refinado" },
+  "pt": { "title": "Ouro Refinado" },
+  "zh": { "title": "精煉黃金" },
+  "th": { "title": "ทองคำบริสุทธิ์" }
+}

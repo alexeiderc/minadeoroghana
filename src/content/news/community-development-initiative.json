@@ -1,0 +1,26 @@
+{
+  "slug": "community-development-initiative",
+  "date": "2024-06-10",
+  "category": "corporate",
+  "imageGradient": "from-orange-900 to-amber-600",
+  "en": {
+    "title": "Community Development Initiative Launched",
+    "excerpt": "Mc Quest launches community development program supporting education, healthcare, and infrastructure."
+  },
+  "es": {
+    "title": "Iniciativa de Desarrollo Comunitario Lanzada",
+    "excerpt": "Mc Quest lanza un programa de desarrollo comunitario que apoya la educación, la atención médica y la infraestructura."
+  },
+  "pt": {
+    "title": "Iniciativa de Desenvolvimento Comunitário Lançada",
+    "excerpt": "Mc Quest lança programa de desenvolvimento comunitário apoiando educação, cuidados de saúde e infraestrutura."
+  },
+  "zh": {
+    "title": "社區發展項目啟動",
+    "excerpt": "Mc Quest 推出社區發展項目，支持教育、醫療保健和基礎設施建設。"
+  },
+  "th": {
+    "title": "เปิดตัวโครงการพัฒนาชุมชน",
+    "excerpt": "Mc Quest เปิดตัวโครงการพัฒนาชุมชนสนับสนุนการศึกษา การดูแลสุขภาพ และโครงสร้างพื้นฐาน"
+  }
+}

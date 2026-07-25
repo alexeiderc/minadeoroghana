@@ -1,0 +1,11 @@
+{
+  "slug": "gold-bars",
+  "span": "normal",
+  "gradient": "from-amber-900 to-orange-700",
+  "order": 3,
+  "en": { "title": "Gold Dore Bars" },
+  "es": { "title": "Barras de Oro Doré" },
+  "pt": { "title": "Barras de Ouro Doré" },
+  "zh": { "title": "黃金粗煉金錠" },
+  "th": { "title": "แท่งทองคำ dore" }
+}

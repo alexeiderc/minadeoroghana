@@ -1,0 +1,11 @@
+{
+  "slug": "heavy-equipment",
+  "span": "wide",
+  "gradient": "from-yellow-900 to-amber-700",
+  "order": 7,
+  "en": { "title": "Heavy Equipment" },
+  "es": { "title": "Equipo Pesado" },
+  "pt": { "title": "Equipamento Pesado" },
+  "zh": { "title": "重型設備" },
+  "th": { "title": "เครื่องจักรหนัก" }
+}
