@@ -5,7 +5,6 @@ import { locales } from "@/i18n/config";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
 import SmoothScroll from "@/components/smooth-scroll";
-import DroneGuide from "@/components/drone-guide";
 
 type Props = {
   children: React.ReactNode;
@@ -37,7 +36,6 @@ export default async function LocaleLayout({ children, params }: Props) {
   return (
     <NextIntlClientProvider messages={messages} locale={locale}>
       <SmoothScroll>
-        <DroneGuide />
         <Navbar />
         <main>{children}</main>
         <Footer />
