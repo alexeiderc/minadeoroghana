@@ -8,6 +8,8 @@ backend:
     uploadMedia: "[skip ci] cms: upload \"{{path}}\""
     deleteMedia: "[skip ci] cms: delete \"{{path}}\""
 
+logo_url: "/logo.png"
+
 media_folder: "public/uploads"
 public_folder: "/uploads"
 
