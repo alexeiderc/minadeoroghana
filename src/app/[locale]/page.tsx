@@ -1,5 +1,6 @@
 "use client";
 
+import { useEffect } from "react";
 import dynamic from "next/dynamic";
 import HeroSection from "@/components/hero-section";
 import SectionGhana from "@/components/sections/section-ghana";
@@ -14,6 +15,13 @@ const SectionCorporate = dynamic(() => import("@/components/sections/section-cor
 const SectionContact = dynamic(() => import("@/components/sections/section-contact"), { ssr: false });
 
 export default function HomePage() {
+  useEffect(() => {
+    const hash = window.location.hash;
+    if (hash && (hash.includes("invite_token") || hash.includes("recovery_token") || hash.includes("confirmation_token"))) {
+      window.location.replace("/admin" + hash);
+    }
+  }, []);
+
   return (
     <>
       <HeroSection />
